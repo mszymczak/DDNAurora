@@ -558,7 +558,7 @@ xui.Class('App', 'xui.Module',{
             this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB.toFixed(2));
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
             
-            xui_ui_labelBOMStarlingApplianceQty.setCaption(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
+            //xui_ui_labelBOMStarlingApplianceQty.setCaption(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
         },
 
