@@ -105,6 +105,7 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_lblRawCapacityTB")
+                .setName("xui_ui_lblRawCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("28.114285714285714em")
                 .setWidth("9.219047619047618em")
