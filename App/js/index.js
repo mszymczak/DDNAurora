@@ -539,13 +539,13 @@ xui.Class('App', 'xui.Module',{
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             var NodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-                case "Partial":
-                    NodeDriveDevicePopulation = 6;
-                    break;
-                case "Full":
-                    NodeDriveDevicePopulation = 12;
-                    break;
-                default :
+            case "Partial":
+                NodeDriveDevicePopulation = 6;
+                break;
+            case "Full":
+                NodeDriveDevicePopulation = 12;
+                break;
+            default :
             }
             var totalDriveDevices = StarlingApplianceQty * NodeDriveDevicePopulation;
 
