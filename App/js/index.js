@@ -526,10 +526,12 @@ xui.Class('App', 'xui.Module',{
         
         _onrender:function(){
             SPA._refresh_tab_reverse_capacity();
+            xui.message('_onrender');
         },
         
         _refresh_tab_reverse_capacity:function(){
             this.xui_ui_lblRawCapacityTB.setCaption("test");
+            xui.message('_refresh_tab_reverse_capacity');
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
