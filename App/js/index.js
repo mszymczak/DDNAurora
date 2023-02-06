@@ -2,6 +2,7 @@
 // Ensure that all the value of "key/value pair" does not refer to external variables
 xui.Class('App', 'xui.Module',{
     Instance:{
+        events:{"onReady":"_onready", "onRender":"_onrender"},
         // Dependency classes
         Dependencies:[],
         // Required modules
