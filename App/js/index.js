@@ -51,7 +51,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label28")
+                .setHost(host,"xui_ui_lblUsableCapacityTB")
+                .setName("xui_ui_lblUsableCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("30.4em")
                 .setWidth("9.219047619047618em")
@@ -67,7 +68,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label29")
+                .setHost(host,"xui_ui_lblEffectiveCapacityTB")
+                .setName("xui_ui_lblEffectiveCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("32.68571428571428em")
                 .setWidth("9.219047619047618em")
@@ -533,8 +535,10 @@ xui.Class('App', 'xui.Module',{
         _refresh_tab_reverse_capacity:function(){
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             var RawCapacityTB = StarlingApplianceQty * 12 * 30.72;
+            var UsableCapacityTB = RawCapacity * 0.8 * (23/24) * 0.9;
             this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB);
-            //xui.message('_refresh_tab_reverse_capacity');
+            this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB);
+            this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
