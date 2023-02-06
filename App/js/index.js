@@ -29,6 +29,7 @@ xui.Class('App', 'xui.Module',{
                         "caption" : "Forward Sizing"
                     }
                 ])
+                .setDock("none")
                 .setLeft("0em")
                 .setTop("0em")
                 .setWidth("53.02857142857143em")
@@ -56,7 +57,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("0")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -72,7 +73,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("0")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -103,14 +104,14 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label33")
+                .setHost(host,"xui_ui_lblRawCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("28.114285714285714em")
                 .setWidth("9.219047619047618em")
                 .setCaption("0")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -317,7 +318,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -378,11 +379,11 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("40.53333333333333em")
                 .setWidth("24.457142857142856em")
-                .setCaption("Starling Appliance with 12x NVME u.2 slots")
+                .setCaption("Aurora Starling Appliance with 12x NVME u.2 slots")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -398,7 +399,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("6")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -414,7 +415,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("72")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -431,7 +432,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -444,11 +445,11 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("42.05714285714286em")
                 .setWidth("24.457142857142856em")
-                .setCaption("QLC-E1.s-30720 Device")
+                .setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -465,7 +466,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -481,7 +482,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("115")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -494,11 +495,11 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("43.58095238095238em")
                 .setWidth("24.457142857142856em")
-                .setCaption("Starling")
+                .setCaption("Aurora Subscription")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -507,6 +508,27 @@ xui.Class('App', 'xui.Module',{
             
             return children;
             // ]]Code created by CrossUI RAD Studio
+        },
+        
+        
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        //
+        // FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS
+        //
+        //
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        _onready:function(){
+            SPA=this;
+        },
+        
+        _onrender:function(){
+            SPA._refresh_tab_reverse_capacity();
+        },
+        
+        _refresh_tab_reverse_capacity:function(){
+            this.xui_ui_lblRawCapacityTB.setCaption("test");
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
@@ -528,5 +550,7 @@ xui.Class('App', 'xui.Module',{
         $EventHandlers:{
         }
     */
+        
     }
+    
 });
