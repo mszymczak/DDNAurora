@@ -21,74 +21,74 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.UI.Tabs")
+                .setHost(host,"xui_ui_tabs5")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Forward Sizing",
+                        "imageClass" : "xui-icon-xui"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Reverse Sizing"
+                    }
+                ])
+                .setDock("none")
+                .setLeft("3.8095238095238093em")
+                .setTop("6.857142857142857em")
+                .setWidth("53.02857142857143em")
+                .setHeight("21.79047619047619em")
+                .setValue("b")
+            );
+            
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput70")
-                .setLeft("3.0476190476190474em")
-                .setTop("9.142857142857142em")
+                .setHost(host,"xui_ui_comboinput117")
+                .setLeft("1.5238095238095237em")
+                .setTop("5.485714285714286em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Raw Capacity")
-                .setType("number")
+                .setType("number"),
+                "b"
             );
             
-            append(
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput72")
-                .setLeft("3.0476190476190474em")
-                .setTop("12.19047619047619em")
+                .setHost(host,"xui_ui_comboinput118")
+                .setLeft("1.5238095238095237em")
+                .setTop("8.533333333333333em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Usable Capacity")
-                .setType("number")
+                .setType("number"),
+                "b"
             );
             
-            append(
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label14")
-                .setLeft("3.8095238095238093em")
-                .setTop("17.523809523809526em")
-                .setCaption("Drive Devices")
-            );
-            
-            append(
-                xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox1")
-                .setItems([
-                    {
-                        "id" : "f",
-                        "caption" : "Forward Sizing",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "r",
-                        "caption" : "Reverse Sizing",
-                        "imageClass" : "xui-icon-number2"
-                    }
-                ])
+                .setHost(host,"xui_ui_label23")
                 .setLeft("2.2857142857142856em")
-                .setTop("1.5238095238095237em")
-                .setWidth("39.695238095238096em")
-                .setHeight("6.628571428571429em")
-                .setLabelSize("1.5em")
-                .setLabelPos("top")
-                .setLabelCaption("DDN Aurora Simple Sizer")
-                .setLabelHAlign("left")
-                .setValue("f")
+                .setTop("13.866666666666667em")
+                .setCaption("Drive Devices"),
+                "b"
             );
             
-            append(
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label16")
-                .setLeft("11.047619047619047em")
-                .setTop("17.523809523809526em")
-                .setCaption("0")
+                .setHost(host,"xui_ui_label24")
+                .setLeft("9.523809523809524em")
+                .setTop("13.866666666666667em")
                 .setWidth("10em")
+                .setCaption("0")
                 .setHAlign("center")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#DCDCDC"
                     }
-                })
+                }),
+                "b"
             );
             
             return children;
