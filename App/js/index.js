@@ -227,7 +227,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput211")
+                .setHost(host,"xui_ui_comboinput_StarlingApplianceQty")
                 .setLeft("2.5904761904761906em")
                 .setTop("7.542857142857143em")
                 .setType("counter")
@@ -531,8 +531,10 @@ xui.Class('App', 'xui.Module',{
         },
         
         _refresh_tab_reverse_capacity:function(){
-            this.xui_ui_lblRawCapacityTB.setCaption("test");
-            xui.message('_refresh_tab_reverse_capacity');
+            var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
+            var RawCapacityTB = StarlingApplianceQty * 12 * 30.72;
+            this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB);
+            //xui.message('_refresh_tab_reverse_capacity');
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
