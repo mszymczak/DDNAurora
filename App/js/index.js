@@ -539,18 +539,18 @@ xui.Class('App', 'xui.Module',{
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             var NodeDriveDevicePopulation = 0;           
             
-            switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-            case "Partial (6)":
-                NodeDriveDevicePopulation = 6;
-                break;
-            case "Full (12)":
-                NodeDriveDevicePopulation = 12;
-                break;
-            default :
-            }
+            //switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
+            //case "Partial (6)":
+            //    NodeDriveDevicePopulation = 6;
+            //    break;
+            //case "Full (12)":
+            NodeDriveDevicePopulation = 12;
+            //    break;
+            //default :
+            //}
             var totalDriveDevices = StarlingApplianceQty * NodeDriveDevicePopulation;
 
-            var RawCapacityTB = StarlingApplianceQty * totalDriveDevices * 30.72;
+            var RawCapacityTB = totalDriveDevices * 30.72;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
             
             
