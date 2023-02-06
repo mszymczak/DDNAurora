@@ -21,45 +21,74 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput70")
+                .setLeft("3.0476190476190474em")
+                .setTop("9.142857142857142em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Raw Capacity")
+                .setType("number")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput72")
+                .setLeft("3.0476190476190474em")
+                .setTop("12.19047619047619em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Usable Capacity")
+                .setType("number")
+            );
+            
+            append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label7")
-                .setLeft("18.285714285714285em")
-                .setTop("14.476190476190476em")
-                .setWidth("9.980952380952381em")
-                .setCaption("Raw Capacity")
-                .setHAlign("center")
+                .setHost(host,"xui_ui_label14")
+                .setLeft("3.8095238095238093em")
+                .setTop("17.523809523809526em")
+                .setCaption("Drive Devices")
             );
             
             append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input7")
-                .setLeft("18.285714285714285em")
-                .setTop("16em")
+                xui.create("xui.UI.RadioBox")
+                .setHost(host,"xui_ui_radiobox1")
+                .setItems([
+                    {
+                        "id" : "f",
+                        "caption" : "Forward Sizing",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "r",
+                        "caption" : "Reverse Sizing",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setLeft("2.2857142857142856em")
+                .setTop("1.5238095238095237em")
+                .setWidth("39.695238095238096em")
+                .setHeight("6.628571428571429em")
+                .setLabelSize("1.5em")
+                .setLabelPos("top")
+                .setLabelCaption("DDN Aurora Simple Sizer")
+                .setLabelHAlign("left")
+                .setValue("f")
             );
             
             append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label9")
-                .setLeft("29.714285714285715em")
-                .setTop("14.476190476190476em")
-                .setWidth("9.980952380952381em")
-                .setCaption("Usable Capacity")
+                .setHost(host,"xui_ui_label16")
+                .setLeft("11.047619047619047em")
+                .setTop("17.523809523809526em")
+                .setCaption("0")
+                .setWidth("10em")
                 .setHAlign("center")
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input8")
-                .setLeft("29.714285714285715em")
-                .setTop("16em")
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input11")
-                .setLeft("18.285714285714285em")
-                .setTop("34.285714285714285em")
-                .setMask("u-11-ll-aa(**)")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC"
+                    }
+                })
             );
             
             return children;
