@@ -124,15 +124,16 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox8")
+                .setHost(host,"xui_ui_radioboxNodeDriveDevicePopulation")
+                .setName("xui_ui_radioboxNodeDriveDevicePopulation")
                 .setItems([
                     {
-                        "id" : "a",
+                        "id" : "Full",
                         "caption" : "Full (12)",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
-                        "id" : "b",
+                        "id" : "Partial",
                         "caption" : "Partial (6)",
                         "imageClass" : "xui-icon-number2"
                     }
@@ -145,7 +146,7 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Node Drive Device Population")
                 .setLabelHAlign("left")
-                .setValue("a"),
+                .setValue("Full"),
                 "b"
             );
             
@@ -230,6 +231,7 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput_StarlingApplianceQty")
+                .setName("xui_ui_comboinput_StarlingApplianceQty")
                 .setLeft("2.5904761904761906em")
                 .setTop("7.542857142857143em")
                 .setType("counter")
@@ -396,11 +398,12 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label83")
+                .setHost(host,"xui_ui_labelBOMStarlingApplianceQty")
+                .setName("xui_ui_labelBOMStarlingApplianceQty")
                 .setLeft("18.285714285714285em")
                 .setTop("40.53333333333333em")
                 .setWidth("3.123809523809524em")
-                .setCaption("6")
+                .setCaption("0")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -416,7 +419,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("42.05714285714286em")
                 .setWidth("3.123809523809524em")
-                .setCaption("72")
+                .setCaption("0")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -534,11 +537,27 @@ xui.Class('App', 'xui.Module',{
         
         _refresh_tab_reverse_capacity:function(){
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
-            var RawCapacityTB = StarlingApplianceQty * 12 * 30.72;
+            var NodeDriveDevicePopulation = 0;           
+            switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
+                case "Partial":
+                    NodeDriveDevicePopulation = 6;
+                    break;
+                case "Full":
+                    NodeDriveDevicePopulation = 12;
+                    break;
+                default :
+            }
+            var totalDriveDevices = StarlingApplianceQty * NodeDriveDevicePopulation;
+
+            var RawCapacityTB = StarlingApplianceQty * totalDriveDevices * 30.72;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
+            
+            
             this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB.toFixed(2));
             this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB.toFixed(2));
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
+            
+            xui_ui_labelBOMStarlingApplianceQty.setCaptiohn(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
         },
 
