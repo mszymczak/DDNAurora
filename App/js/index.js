@@ -537,7 +537,7 @@ xui.Class('App', 'xui.Module',{
             var RawCapacityTB = StarlingApplianceQty * 12 * 30.72;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
             this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB);
-            //this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB);
+            this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB);
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
         },
 
