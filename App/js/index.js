@@ -23,9 +23,35 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label7")
-                .setLeft("25.142857142857142em")
-                .setTop("18.285714285714285em")
-                .setCaption("Label")
+                .setLeft("18.285714285714285em")
+                .setTop("14.476190476190476em")
+                .setWidth("9.980952380952381em")
+                .setCaption("Raw Capacity")
+                .setHAlign("center")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input7")
+                .setLeft("18.285714285714285em")
+                .setTop("16em")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label9")
+                .setLeft("29.714285714285715em")
+                .setTop("14.476190476190476em")
+                .setWidth("9.980952380952381em")
+                .setCaption("Usable Capacity")
+                .setHAlign("center")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input8")
+                .setLeft("29.714285714285715em")
+                .setTop("16em")
             );
             
             return children;
