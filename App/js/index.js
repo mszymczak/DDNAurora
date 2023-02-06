@@ -54,6 +54,14 @@ xui.Class('App', 'xui.Module',{
                 .setTop("16em")
             );
             
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input11")
+                .setLeft("18.285714285714285em")
+                .setTop("34.285714285714285em")
+                .setMask("u-11-ll-aa(**)")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
