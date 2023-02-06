@@ -52,12 +52,12 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label28")
                 .setLeft("10.666666666666666em")
                 .setTop("30.4em")
-                .setWidth("10em")
+                .setWidth("9.219047619047618em")
                 .setCaption("0")
-                .setHAlign("center")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC"
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -68,12 +68,12 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label29")
                 .setLeft("10.666666666666666em")
                 .setTop("32.68571428571428em")
-                .setWidth("10em")
+                .setWidth("9.219047619047618em")
                 .setCaption("0")
-                .setHAlign("center")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC"
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -106,12 +106,12 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label33")
                 .setLeft("10.666666666666666em")
                 .setTop("28.114285714285714em")
-                .setWidth("10em")
+                .setWidth("9.219047619047618em")
                 .setCaption("0")
-                .setHAlign("center")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#DCDCDC"
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -396,11 +396,10 @@ xui.Class('App', 'xui.Module',{
                 .setTop("40.53333333333333em")
                 .setWidth("3.123809523809524em")
                 .setCaption("6")
-                .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#DCDCDC",
-                        "padding" : "0px 0px 0px 10px"
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -413,11 +412,10 @@ xui.Class('App', 'xui.Module',{
                 .setTop("42.05714285714286em")
                 .setWidth("3.123809523809524em")
                 .setCaption("72")
-                .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#DCDCDC",
-                        "padding" : "0px 0px 0px 10px"
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -481,11 +479,10 @@ xui.Class('App', 'xui.Module',{
                 .setTop("43.58095238095238em")
                 .setWidth("3.123809523809524em")
                 .setCaption("115")
-                .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#DCDCDC",
-                        "padding" : "0px 0px 0px 10px"
+                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
