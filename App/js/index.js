@@ -25,20 +25,15 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_tabs5")
                 .setItems([
                     {
-                        "id" : "a",
-                        "caption" : "Forward Sizing",
-                        "imageClass" : ""
-                    },
-                    {
                         "id" : "b",
-                        "caption" : "Reverse Sizing"
+                        "caption" : "Forward Sizing"
                     }
                 ])
                 .setDock("none")
                 .setLeft("1.5238095238095237em")
                 .setTop("1.5238095238095237em")
                 .setWidth("53.02857142857143em")
-                .setHeight("28.64761904761905em")
+                .setHeight("42.36190476190476em")
                 .setValue("b")
             );
             
@@ -46,7 +41,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label27")
                 .setLeft("1.5238095238095237em")
-                .setTop("13.866666666666667em")
+                .setTop("24.304761904761904em")
                 .setWidth("8.838095238095239em")
                 .setCaption("Usable Capacity")
                 .setHAlign("left"),
@@ -57,7 +52,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label28")
                 .setLeft("10.666666666666666em")
-                .setTop("13.866666666666667em")
+                .setTop("24.304761904761904em")
                 .setWidth("10em")
                 .setCaption("0")
                 .setHAlign("center")
@@ -73,7 +68,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label29")
                 .setLeft("10.666666666666666em")
-                .setTop("16.152380952380952em")
+                .setTop("26.590476190476192em")
                 .setWidth("10em")
                 .setCaption("0")
                 .setHAlign("center")
@@ -89,7 +84,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label31")
                 .setLeft("1.5238095238095237em")
-                .setTop("16.152380952380952em")
+                .setTop("26.590476190476192em")
                 .setWidth("8.838095238095239em")
                 .setCaption("Effective Capacity")
                 .setHAlign("left"),
@@ -100,7 +95,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label32")
                 .setLeft("1.5238095238095237em")
-                .setTop("11.58095238095238em")
+                .setTop("22.01904761904762em")
                 .setWidth("8.838095238095239em")
                 .setCaption("Raw Capacity")
                 .setHAlign("left"),
@@ -111,7 +106,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label33")
                 .setLeft("10.666666666666666em")
-                .setTop("11.58095238095238em")
+                .setTop("22.01904761904762em")
                 .setWidth("10em")
                 .setCaption("0")
                 .setHAlign("center")
@@ -124,19 +119,86 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_tabs5.append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput133")
-                .setLeft("2.6666666666666665em")
-                .setTop("8.304761904761905em")
-                .setWidth("17.904761904761905em")
-                .setLabelSize("8em")
-                .setType("number"),
+                xui.create("xui.UI.RadioBox")
+                .setHost(host,"xui_ui_radiobox8")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Full (12)",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Partial (6)",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setLeft("1.5238em")
+                .setTop("4.495238095238095em")
+                .setWidth("15.314285714285715em")
+                .setHeight("6.628571428571429em")
+                .setLabelSize("1.5em")
+                .setLabelPos("top")
+                .setLabelCaption("Node Drive Device Population")
+                .setLabelHAlign("left")
+                .setValue("a"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label43")
+                .setLeft("21.333333333333332em")
+                .setTop("22.01904761904762em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label44")
+                .setLeft("21.333333333333332em")
+                .setTop("24.304761904761904em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label45")
+                .setLeft("21.333333333333332em")
+                .setTop("26.590476190476192em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label57")
+                .setLeft("1.5238095238095237em")
+                .setTop("19.733333333333334em")
+                .setWidth("45.02857142857143em")
+                .setCaption("Approximate Capacity")
+                .setHAlign("left")
+                .setFontColor("#FFFFFF")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#4169E1",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
                 "b"
             );
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox8")
+                .setHost(host,"xui_ui_radiobox10")
                 .setItems([
                     {
                         "id" : "a",
@@ -149,70 +211,63 @@ xui.Class('App', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setLeft("1.5238em")
-                .setTop("0.9142857142857143em")
+                .setLeft("1.5238095238095237em")
+                .setTop("11.352380952380953em")
                 .setWidth("15.314285714285715em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
-                .setLabelCaption("Drive Device")
+                .setLabelCaption("Drive Device Type")
                 .setLabelHAlign("left")
                 .setValue("a"),
                 "b"
             );
             
             host.xui_ui_tabs5.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput211")
+                .setLeft("22.857142857142858em")
+                .setTop("6.247619047619048em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Counter")
+                .setType("counter")
+                .setValue(6),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label41")
+                .setHost(host,"xui_ui_label58")
+                .setLeft("9.904761904761905em")
+                .setTop("20.495238095238093em")
+                .setWidth("37.40952380952381em")
+                .setCaption(" ")
+                .setHAlign("left")
+                .setFontColor("#FFFFFF")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#4169E1"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label59")
                 .setLeft("1.5238095238095237em")
-                .setTop("8.533333333333333em")
-                .setWidth("8.838095238095239em")
-                .setCaption("Drive Devices")
-                .setHAlign("left"),
-                "b"
-            );
-            
-            host.xui_ui_tabs5.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label42")
-                .setLeft("21.333333333333332em")
-                .setTop("8.533333333333333em")
-                .setWidth("10.361904761904762em")
-                .setCaption("Quantity")
-                .setHAlign("left"),
-                "b"
-            );
-            
-            host.xui_ui_tabs5.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label43")
-                .setLeft("21.333333333333332em")
-                .setTop("11.58095238095238em")
-                .setWidth("10.361904761904762em")
-                .setCaption("TB")
-                .setHAlign("left"),
-                "b"
-            );
-            
-            host.xui_ui_tabs5.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label44")
-                .setLeft("21.333333333333332em")
-                .setTop("13.866666666666667em")
-                .setWidth("10.361904761904762em")
-                .setCaption("TB")
-                .setHAlign("left"),
-                "b"
-            );
-            
-            host.xui_ui_tabs5.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label45")
-                .setLeft("21.333333333333332em")
-                .setTop("16.152380952380952em")
-                .setWidth("10.361904761904762em")
-                .setCaption("TB")
-                .setHAlign("left"),
+                .setTop("2.4380952380952383em")
+                .setWidth("45.02857142857143em")
+                .setCaption("DDN Aurora Appliance")
+                .setHAlign("left")
+                .setFontColor("#FFFFFF")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#4169E1",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
                 "b"
             );
             
