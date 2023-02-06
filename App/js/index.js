@@ -35,8 +35,8 @@ xui.Class('App', 'xui.Module',{
                     }
                 ])
                 .setDock("none")
-                .setLeft("3.8095238095238093em")
-                .setTop("6.857142857142857em")
+                .setLeft("1.5238095238095237em")
+                .setTop("1.5238095238095237em")
                 .setWidth("53.02857142857143em")
                 .setHeight("28.64761904761905em")
                 .setValue("b")
@@ -45,10 +45,11 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label27")
-                .setLeft("-0.7619047619047619em")
+                .setLeft("1.5238095238095237em")
                 .setTop("13.866666666666667em")
+                .setWidth("8.838095238095239em")
                 .setCaption("Usable Capacity")
-                .setWidth("10.361904761904762em"),
+                .setHAlign("left"),
                 "b"
             );
             
@@ -87,20 +88,22 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label31")
-                .setLeft("-0.7619047619047619em")
+                .setLeft("1.5238095238095237em")
                 .setTop("16.152380952380952em")
+                .setWidth("8.838095238095239em")
                 .setCaption("Effective Capacity")
-                .setWidth("10.361904761904762em"),
+                .setHAlign("left"),
                 "b"
             );
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label32")
-                .setLeft("-0.7619047619047619em")
+                .setLeft("1.5238095238095237em")
                 .setTop("11.58095238095238em")
+                .setWidth("8.838095238095239em")
                 .setCaption("Raw Capacity")
-                .setWidth("10.361904761904762em"),
+                .setHAlign("left"),
                 "b"
             );
             
@@ -124,17 +127,16 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput133")
                 .setLeft("2.6666666666666665em")
-                .setTop("9.066666666666666em")
+                .setTop("8.304761904761905em")
                 .setWidth("17.904761904761905em")
                 .setLabelSize("8em")
-                .setLabelCaption("Drive Devices")
                 .setType("number"),
                 "b"
             );
             
-            append(
+            host.xui_ui_tabs5.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox4")
+                .setHost(host,"xui_ui_radiobox8")
                 .setItems([
                     {
                         "id" : "a",
@@ -147,15 +149,71 @@ xui.Class('App', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setLeft("5.333333333333333em")
-                .setTop("10.666666666666666em")
+                .setLeft("1.5238em")
+                .setTop("0.9142857142857143em")
                 .setWidth("15.314285714285715em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
                 .setLabelCaption("Drive Device")
                 .setLabelHAlign("left")
-                .setValue("a")
+                .setValue("a"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label41")
+                .setLeft("1.5238095238095237em")
+                .setTop("8.533333333333333em")
+                .setWidth("8.838095238095239em")
+                .setCaption("Drive Devices")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label42")
+                .setLeft("21.333333333333332em")
+                .setTop("8.533333333333333em")
+                .setWidth("10.361904761904762em")
+                .setCaption("Quantity")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label43")
+                .setLeft("21.333333333333332em")
+                .setTop("11.58095238095238em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label44")
+                .setLeft("21.333333333333332em")
+                .setTop("13.866666666666667em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label45")
+                .setLeft("21.333333333333332em")
+                .setTop("16.152380952380952em")
+                .setWidth("10.361904761904762em")
+                .setCaption("TB")
+                .setHAlign("left"),
+                "b"
             );
             
             return children;
