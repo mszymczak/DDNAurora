@@ -29,7 +29,6 @@ xui.Class('App', 'xui.Module',{
                         "caption" : "Forward Sizing"
                     }
                 ])
-                .setDock("none")
                 .setLeft("0em")
                 .setTop("0em")
                 .setWidth("53.02857142857143em")
@@ -219,7 +218,7 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Drive Device Type")
                 .setLabelHAlign("left")
-                .setValue("a"),
+                .setValue("b"),
                 "b"
             );
             
@@ -313,7 +312,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label76")
                 .setLeft("1.5238095238095237em")
                 .setTop("40.53333333333333em")
-                .setWidth("9.219047619047618em")
+                .setWidth("15.314285714285715em")
                 .setCaption("RS-7313")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -330,7 +329,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label79")
                 .setLeft("1.5238095238095237em")
                 .setTop("39.00952380952381em")
-                .setWidth("10em")
+                .setWidth("16.076190476190476em")
                 .setCaption("SKU")
                 .setHAlign("center")
                 .setCustomStyle({
@@ -360,9 +359,9 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label81")
-                .setLeft("12.19047619047619em")
+                .setLeft("18.285714285714285em")
                 .setTop("39.00952380952381em")
-                .setWidth("10em")
+                .setWidth("3.8857142857142857em")
                 .setCaption("Qty")
                 .setHAlign("center")
                 .setCustomStyle({
@@ -379,7 +378,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("40.53333333333333em")
                 .setWidth("24.457142857142856em")
-                .setCaption("Starling")
+                .setCaption("Starling Appliance with 12x NVME u.2 slots")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -393,10 +392,112 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label83")
-                .setLeft("12.19047619047619em")
+                .setLeft("18.285714285714285em")
                 .setTop("40.53333333333333em")
-                .setWidth("9.219047619047618em")
-                .setCaption("-")
+                .setWidth("3.123809523809524em")
+                .setCaption("6")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label105")
+                .setLeft("18.285714285714285em")
+                .setTop("42.05714285714286em")
+                .setWidth("3.123809523809524em")
+                .setCaption("72")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label106")
+                .setLeft("1.5238095238095237em")
+                .setTop("42.05714285714286em")
+                .setWidth("15.314285714285715em")
+                .setCaption("QLC-E1.s-30720")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label107")
+                .setLeft("22.857142857142858em")
+                .setTop("42.05714285714286em")
+                .setWidth("24.457142857142856em")
+                .setCaption("QLC-E1.s-30720 Device")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label108")
+                .setLeft("1.5238095238095237em")
+                .setTop("43.58095238095238em")
+                .setWidth("15.314285714285715em")
+                .setCaption("SUB-AUR-S3-750-5625TB-1Y")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label109")
+                .setLeft("18.285714285714285em")
+                .setTop("43.58095238095238em")
+                .setWidth("3.123809523809524em")
+                .setCaption("115")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label110")
+                .setLeft("22.857142857142858em")
+                .setTop("43.58095238095238em")
+                .setWidth("24.457142857142856em")
+                .setCaption("Starling")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
