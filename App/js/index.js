@@ -527,7 +527,7 @@ xui.Class('App', 'xui.Module',{
         
         _onrender:function(){
             SPA._refresh_tab_reverse_capacity();
-            xui.message('_onrender');
+            //xui.message('_onrender');
         },
         
         _refresh_tab_reverse_capacity:function(){
