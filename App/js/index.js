@@ -538,11 +538,12 @@ xui.Class('App', 'xui.Module',{
         _refresh_tab_reverse_capacity:function(){
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             var NodeDriveDevicePopulation = 0;           
+            
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-            case "Partial":
+            case "Partial (6)":
                 NodeDriveDevicePopulation = 6;
                 break;
-            case "Full":
+            case "Full (12)":
                 NodeDriveDevicePopulation = 12;
                 break;
             default :
