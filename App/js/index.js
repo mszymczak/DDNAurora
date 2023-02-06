@@ -548,6 +548,7 @@ xui.Class('App', 'xui.Module',{
             //    break;
             //default :
             //}
+            
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
             var RawCapacityTB = StarlingDriveDeviceQty * 30.72;
