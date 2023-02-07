@@ -235,6 +235,10 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("2.5904761904761906em")
                 .setTop("7.542857142857143em")
                 .setType("counter")
+                .setPrecision(null)
+                .setIncrement(1)
+                .setMin(6)
+                .setMax(10000)
                 .setValue(6),
                 "b"
             );
