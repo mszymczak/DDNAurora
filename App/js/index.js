@@ -145,7 +145,8 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Node Drive Device Population")
                 .setLabelHAlign("left")
-                .setValue("F"),
+                .setValue("F")
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
