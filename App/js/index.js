@@ -554,7 +554,7 @@ xui.Class('App', 'xui.Module',{
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
             //var StarlingNodeDriveDeviceTypeTB = 0;
-            //switch (this.xui_ui_xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
+            //switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
             //case "QLC-E1.s-15360":
             //    StarlingNodeDriveDeviceTypeTB = 15.36;
             //    this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
