@@ -139,7 +139,7 @@ xui.Class('App', 'xui.Module',{
                 ])
                 .setLeft("1.5238em")
                 .setTop("10.59047619047619em")
-                .setWidth("9.980952380952381em")
+                .setWidth("13.790476190476191em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
@@ -516,6 +516,22 @@ xui.Class('App', 'xui.Module',{
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput903")
+                .setName("xui_ui_comboinput_StarlingApplianceQty")
+                .setLeft("2.2857142857142856em")
+                .setTop("9.295238095238096em")
+                .setWidth("10.361904761904762em")
+                .setType("number")
+                .setPrecision(null)
+                .setIncrement(1)
+                .setMin(6)
+                .setMax(10000)
+                .setValue(6),
                 "b"
             );
             
