@@ -534,11 +534,11 @@ xui.Class('App', 'xui.Module',{
         },
         
         _onrender:function(){
-            SPA._refresh_tab_reverse_capacity();
+            SPA._refresh_tab_forward_capacity();
             //xui.message('_onrender');
         },
                 
-        _refresh_tab_reverse_capacity:function(){
+        _refresh_tab_forward_capacity:function(){
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
