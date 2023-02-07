@@ -225,7 +225,8 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Drive Device Type")
                 .setLabelHAlign("left")
-                .setValue("30"),
+                .setValue("30")
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
@@ -240,7 +241,8 @@ xui.Class('App', 'xui.Module',{
                 .setIncrement(1)
                 .setMin(6)
                 .setMax(10000)
-                .setValue(6),
+                .setValue(6)
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
@@ -575,7 +577,8 @@ xui.Class('App', 'xui.Module',{
                 .setIncrement(1)
                 .setMin(1)
                 .setMax(5)
-                .setValue(3),
+                .setValue(3)
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
@@ -631,7 +634,8 @@ xui.Class('App', 'xui.Module',{
                         "disabled" : true
                     }
                 ])
-                .setValue("SUP-POP-INV"),
+                .setValue("SUP-POP-INV")
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
@@ -654,7 +658,8 @@ xui.Class('App', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setValue("Basic Onsite"),
+                .setValue("Basic Onsite")
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
