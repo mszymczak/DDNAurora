@@ -127,12 +127,12 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_radioboxNodeDriveDevicePopulation")
                 .setItems([
                     {
-                        "id" : "Full (12)",
+                        "id" : "F",
                         "caption" : "Full (12)",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
-                        "id" : "Partial (6)",
+                        "id" : "P",
                         "caption" : "Partial (6)",
                         "imageClass" : "xui-icon-number2"
                     }
@@ -206,12 +206,12 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_radioboxNodeDriveDeviceType")
                 .setItems([
                     {
-                        "id" : "15360",
+                        "id" : "15",
                         "caption" : "QLC-E1.s-15360",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
-                        "id" : "30720",
+                        "id" : "30",
                         "caption" : "QLC-E1.s-30720",
                         "imageClass" : "xui-icon-number2"
                     }
@@ -537,8 +537,11 @@ xui.Class('App', 'xui.Module',{
             SPA._refresh_tab_reverse_capacity();
             //xui.message('_onrender');
         },
-        
+                
         _refresh_tab_reverse_capacity:function(){
+            
+            xui.message(this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue());
+            
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
             var StarlingNodeDriveDevicePopulation = 0;           
@@ -550,7 +553,6 @@ xui.Class('App', 'xui.Module',{
                 StarlingNodeDriveDevicePopulation = 12;
                 break;
             default :
-                StarlingNodeDriveDevicePopulation = 1;
             }            
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
