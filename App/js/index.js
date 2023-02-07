@@ -561,7 +561,7 @@ xui.Class('App', 'xui.Module',{
             //    this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
             //    break;
             //case "QLC-E1.s-30720":
-            StarlingNodeDriveDeviceTypeTB = 30.72;
+            var StarlingNodeDriveDeviceTypeTB = 30.72;
             //    this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
             //    this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
             //    break;
