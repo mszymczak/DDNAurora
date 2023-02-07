@@ -145,7 +145,7 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Node Drive Device Population")
                 .setLabelHAlign("left")
-                .setValue("Full"),
+                .setValue("F"),
                 "b"
             );
             
@@ -224,7 +224,7 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Drive Device Type")
                 .setLabelHAlign("left")
-                .setValue("30720"),
+                .setValue("30"),
                 "b"
             );
             
@@ -546,10 +546,10 @@ xui.Class('App', 'xui.Module',{
             
             var StarlingNodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-            case "Partial":
+            case "Partial (6)":
                 StarlingNodeDriveDevicePopulation = 6;
                 break;
-            case "Full":
+            case "Full (12)":
                 StarlingNodeDriveDevicePopulation = 12;
                 break;
             default :
