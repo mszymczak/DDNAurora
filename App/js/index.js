@@ -127,12 +127,12 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_radioboxNodeDriveDevicePopulation")
                 .setItems([
                     {
-                        "id" : "Full",
+                        "id" : "Full (12)",
                         "caption" : "Full (12)",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
-                        "id" : "Partial",
+                        "id" : "Partial (6)",
                         "caption" : "Partial (6)",
                         "imageClass" : "xui-icon-number2"
                     }
