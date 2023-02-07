@@ -558,7 +558,7 @@ xui.Class('App', 'xui.Module',{
             case "QLC-E1.s-15360":
                 StarlingNodeDriveDeviceTypeTB = 15.36;
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
-                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 15.36 TB QLC-E1.s-15360 Device");
                 break;
             case "QLC-E1.s-30720":
                 StarlingNodeDriveDeviceTypeTB = 30.72;
