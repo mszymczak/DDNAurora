@@ -546,10 +546,10 @@ xui.Class('App', 'xui.Module',{
             
             var StarlingNodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-            case "Partial (6)":
+            case "Partial":
                 StarlingNodeDriveDevicePopulation = 6;
                 break;
-            case "Full (12)":
+            case "Full":
                 StarlingNodeDriveDevicePopulation = 12;
                 break;
             default :
