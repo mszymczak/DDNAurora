@@ -568,8 +568,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput995")
-                .setName("xui_ui_comboinput_StarlingApplianceQty")
+                .setHost(host,"xui_ui_comboinput_TermsSupportYears")
+                .setName("xui_ui_comboinput_TermsSupportYears")
                 .setLeft("13.714285714285714em")
                 .setTop("9.6em")
                 .setType("counter")
@@ -606,7 +606,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput996")
+                .setHost(host,"xui_ui_comboinput_TermsPeriodofPerformance")
+                .setName("xui_ui_comboinput_TermsPeriodofPerformance")
                 .setLeft("13.714285714285714em")
                 .setTop("3.7333333333333334em")
                 .setLabelSize("auto")
@@ -641,7 +642,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput1010")
+                .setHost(host,"xui_ui_comboinput_TermsSupportType")
+                .setName("xui_ui_comboinput_TermsSupportType")
                 .setLeft("13.714285714285714em")
                 .setTop("6.704761904761905em")
                 .setLabelSize("auto")
@@ -730,9 +732,14 @@ xui.Class('App', 'xui.Module',{
 //750
 //5625
 //42188
+            //xui_ui_comboinput_TermsSupportType
+            //xui_ui_comboinput_TermsSupportYears
+            //xui_ui_comboinput_TermsPeriodofPerformance
+
+            
             
             var RoundedRawCapacityDividedBy100 = Math.ceil(RawCapacityTB / 100);
-            var TermYears = 3;
+            var TermYears =  Number(this.xui_ui_comboinput_TermsSupportYear.getUIValue());
             var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
             this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
 
