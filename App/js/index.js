@@ -554,6 +554,7 @@ xui.Class('App', 'xui.Module',{
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
             var StarlingNodeDriveDeviceTypeTB = Number(0);
+            xui.message(StarlingNodeDriveDeviceTypeTB);
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
             case "QLC-E1.s-15360":
                 StarlingNodeDriveDeviceTypeTB = 15.36;
@@ -567,6 +568,7 @@ xui.Class('App', 'xui.Module',{
                 break;
             default :
             }            
+            xui.message(StarlingNodeDriveDeviceTypeTB);
             
             var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
