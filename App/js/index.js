@@ -202,7 +202,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox10")
+                .setHost(host,"xui_ui_radioboxNodeDriveDeviceType")
+                .setName("xui_ui_radioboxNodeDriveDeviceType")
                 .setItems([
                     {
                         "id" : "a",
@@ -431,11 +432,12 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label106")
+                .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceSKU")
+                .setName("xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("42.05714285714286em")
                 .setWidth("15.314285714285715em")
-                .setCaption("QLC-E1.s-30720")
+                .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -469,7 +471,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("43.58095238095238em")
                 .setWidth("15.314285714285715em")
-                .setCaption("SUB-AUR-S3-750-5625TB-1Y")
+                .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -537,21 +539,33 @@ xui.Class('App', 'xui.Module',{
         
         _refresh_tab_reverse_capacity:function(){
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
+            
             var StarlingNodeDriveDevicePopulation = 0;           
-            
-            //switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
-            //case "Partial (6)":
-            //    StarlingNodeDriveDevicePopulation = 6;
-            //    break;
-            //case "Full (12)":
-            StarlingNodeDriveDevicePopulation = 12;
-            //    break;
-            //default :
-            //}
-            
+            switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
+            case "Partial (6)":
+                StarlingNodeDriveDevicePopulation = 6;
+                break;
+            case "Full (12)":
+                StarlingNodeDriveDevicePopulation = 12;
+                break;
+            default :
+            }            
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
-            var RawCapacityTB = StarlingDriveDeviceQty * 30.72;
+            var StarlingNodeDriveDeviceTypeTB = 0;
+            switch (this.xui_ui_xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
+            case "QLC-E1.s-15360":
+                StarlingNodeDriveDeviceTypeTB = 15.36;
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
+                break;
+            case "QLC-E1.s-30720":
+                StarlingNodeDriveDeviceTypeTB = 30.72;
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
+                break;
+            default :
+            }            
+            
+            var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
             
             
