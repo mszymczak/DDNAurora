@@ -468,7 +468,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label108")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
+                .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("43.58095238095238em")
                 .setWidth("15.314285714285715em")
@@ -485,7 +486,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label109")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
+                .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("18.285714285714285em")
                 .setTop("43.58095238095238em")
                 .setWidth("3.123809523809524em")
@@ -501,7 +503,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label110")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
+                .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("43.58095238095238em")
                 .setWidth("24.457142857142856em")
@@ -578,9 +581,29 @@ xui.Class('App', 'xui.Module',{
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
+                        
+//100
+//750
+//5625
+//42188
             
-            if((RawCapacityTB / 100) > 3){
-                
+            var RoundedRawCapacityDividedBy100 = Math.Round(RawCapacityTB / 100);
+            var TermYears = 3;
+            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
+            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
+
+            if(RawCapacityTB < 101){
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+            }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+            }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+            }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
             }
             
         },
