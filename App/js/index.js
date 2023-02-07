@@ -739,7 +739,7 @@ xui.Class('App', 'xui.Module',{
             
             
             var RoundedRawCapacityDividedBy100 = Math.ceil(RawCapacityTB / 100);
-            var TermYears = 3; //Number(this.xui_ui_comboinput_TermsSupportYear.getUIValue());
+            var TermYears = this.xui_ui_comboinput_TermsSupportYear.getUIValue();
             var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
             this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
 
