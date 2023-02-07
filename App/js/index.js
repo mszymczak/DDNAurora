@@ -551,7 +551,7 @@ xui.Class('App', 'xui.Module',{
                 break;
             default :
             }            
-            var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
+            var StarlingDriveDeviceQty = StarlingApplianceQty * 12; //StarlingNodeDriveDevicePopulation;
 
             var StarlingNodeDriveDeviceTypeTB = Number(0);
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
