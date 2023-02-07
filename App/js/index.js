@@ -206,12 +206,12 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_radioboxNodeDriveDeviceType")
                 .setItems([
                     {
-                        "id" : "a",
+                        "id" : "15360",
                         "caption" : "QLC-E1.s-15360",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
-                        "id" : "b",
+                        "id" : "30720",
                         "caption" : "QLC-E1.s-30720",
                         "imageClass" : "xui-icon-number2"
                     }
@@ -553,7 +553,7 @@ xui.Class('App', 'xui.Module',{
             }            
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
-            var StarlingNodeDriveDeviceTypeTB = 0;
+            var StarlingNodeDriveDeviceTypeTB = Number(0);
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
             case "QLC-E1.s-15360":
                 StarlingNodeDriveDeviceTypeTB = 15.36;
@@ -570,8 +570,7 @@ xui.Class('App', 'xui.Module',{
             
             var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
-            
-            
+                        
             this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB.toFixed(2));
             this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB.toFixed(2));
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
