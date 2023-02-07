@@ -450,11 +450,12 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label107")
+                .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceDescription")
+                .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("42.05714285714286em")
                 .setWidth("24.457142857142856em")
-                .setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device")
+                .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -557,10 +558,12 @@ xui.Class('App', 'xui.Module',{
             case "QLC-E1.s-15360":
                 StarlingNodeDriveDeviceTypeTB = 15.36;
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
                 break;
             case "QLC-E1.s-30720":
                 StarlingNodeDriveDeviceTypeTB = 30.72;
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
                 break;
             default :
             }            
