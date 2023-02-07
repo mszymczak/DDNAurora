@@ -570,7 +570,6 @@ xui.Class('App', 'xui.Module',{
                 break;
             default :
             }            
-            xui.message(StarlingNodeDriveDeviceTypeTB);
             
             var RawCapacityTB = StarlingDriveDeviceQty * 30.72; // StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
