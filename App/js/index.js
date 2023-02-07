@@ -540,8 +540,6 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_reverse_capacity:function(){
             
-            xui.message(this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue());
-            
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
             var StarlingNodeDriveDevicePopulation = 0;           
@@ -580,6 +578,10 @@ xui.Class('App', 'xui.Module',{
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
+            
+            if((RawCapacityTB / 100) > 3){
+                
+            }
             
         },
 
