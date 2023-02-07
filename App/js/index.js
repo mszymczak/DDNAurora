@@ -129,17 +129,17 @@ xui.Class('App', 'xui.Module',{
                     {
                         "id" : "F",
                         "caption" : "Full (12)",
-                        "imageClass" : "xui-icon-number1"
+                        "imageClass" : ""
                     },
                     {
                         "id" : "P",
                         "caption" : "Partial (6)",
-                        "imageClass" : "xui-icon-number2"
+                        "imageClass" : ""
                     }
                 ])
                 .setLeft("1.5238em")
                 .setTop("10.59047619047619em")
-                .setWidth("15.314285714285715em")
+                .setWidth("9.980952380952381em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
@@ -208,17 +208,17 @@ xui.Class('App', 'xui.Module',{
                     {
                         "id" : "15",
                         "caption" : "15.36 TB QLC-E1.s-15360",
-                        "imageClass" : "xui-icon-number1"
+                        "imageClass" : ""
                     },
                     {
                         "id" : "30",
                         "caption" : "30.72 TB QLC-E1.s-30720",
-                        "imageClass" : "xui-icon-number2"
+                        "imageClass" : ""
                     }
                 ])
                 .setLeft("1.5238095238095237em")
                 .setTop("17.447619047619046em")
-                .setWidth("26.742857142857144em")
+                .setWidth("20.64761904761905em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
