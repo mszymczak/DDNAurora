@@ -523,22 +523,6 @@ xui.Class('App', 'xui.Module',{
                 "b"
             );
             
-            host.xui_ui_tabs5.append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput903")
-                .setName("xui_ui_comboinput_StarlingApplianceQty")
-                .setLeft("2.2857142857142856em")
-                .setTop("9.295238095238096em")
-                .setWidth("10.361904761904762em")
-                .setType("number")
-                .setPrecision(null)
-                .setIncrement(1)
-                .setMin(6)
-                .setMax(10000)
-                .setValue(6),
-                "b"
-            );
-            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
