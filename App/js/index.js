@@ -587,10 +587,10 @@ xui.Class('App', 'xui.Module',{
 //5625
 //42188
             
-//            var RoundedRawCapacityDividedBy100 = Math.Round(RawCapacityTB / 100);
-//            var TermYears = 3;
-//            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
-//            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
+            var RoundedRawCapacityDividedBy100 = Math.Round(RawCapacityTB / 100);
+            var TermYears = 3;
+            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
+            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
 
 //            if(RawCapacityTB < 101){
 //                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
