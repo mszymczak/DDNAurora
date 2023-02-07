@@ -553,20 +553,20 @@ xui.Class('App', 'xui.Module',{
             }            
             var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
 
-            var StarlingNodeDriveDeviceTypeTB = 0;
-            switch (this.xui_ui_xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
-            case "QLC-E1.s-15360":
-                StarlingNodeDriveDeviceTypeTB = 15.36;
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
-                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
-                break;
-            case "QLC-E1.s-30720":
-                StarlingNodeDriveDeviceTypeTB = 30.72;
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
-                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
-                break;
-            default :
-            }            
+            //var StarlingNodeDriveDeviceTypeTB = 0;
+            //switch (this.xui_ui_xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
+            //case "QLC-E1.s-15360":
+            //    StarlingNodeDriveDeviceTypeTB = 15.36;
+            //    this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
+            //    this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
+            //    break;
+            //case "QLC-E1.s-30720":
+            StarlingNodeDriveDeviceTypeTB = 30.72;
+            //    this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
+            //    this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
+            //    break;
+            //default :
+            //}            
             
             var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
