@@ -665,6 +665,258 @@ xui.Class('App', 'xui.Module',{
                 "b"
             );
             
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.TreeGrid")
+                .setHost(host,"xui_ui_treegrid10")
+                .setDock("none")
+                .setLeft("32em")
+                .setTop("17.676190476190477em")
+                .setEditable(true)
+                .setRowHandler(false)
+                .setHeader([
+                    {
+                        "id" : "label",
+                        "type" : "label",
+                        "width" : "8em",
+                        "caption" : "label"
+                    },
+                    {
+                        "id" : "input",
+                        "type" : "input",
+                        "width" : "8em",
+                        "caption" : "input"
+                    },
+                    {
+                        "id" : "combobox",
+                        "type" : "combobox",
+                        "width" : "8em",
+                        "caption" : "combobox"
+                    },
+                    {
+                        "id" : "listbox",
+                        "type" : "listbox",
+                        "width" : "8em",
+                        "caption" : "listbox"
+                    },
+                    {
+                        "id" : "getter",
+                        "type" : "getter",
+                        "width" : "8em",
+                        "caption" : "getter"
+                    },
+                    {
+                        "id" : "cmdbox",
+                        "type" : "cmdbox",
+                        "width" : "8em",
+                        "caption" : "cmdbox"
+                    },
+                    {
+                        "id" : "popbox",
+                        "type" : "popbox",
+                        "width" : "8em",
+                        "caption" : "popbox"
+                    },
+                    {
+                        "id" : "date",
+                        "type" : "date",
+                        "width" : "8em",
+                        "caption" : "date"
+                    },
+                    {
+                        "id" : "time",
+                        "type" : "time",
+                        "width" : "8em",
+                        "caption" : "time"
+                    },
+                    {
+                        "id" : "datetime",
+                        "type" : "datetime",
+                        "width" : "8em",
+                        "caption" : "datetime"
+                    },
+                    {
+                        "id" : "color",
+                        "type" : "color",
+                        "width" : "8em",
+                        "caption" : "color"
+                    },
+                    {
+                        "id" : "spin",
+                        "type" : "spin",
+                        "width" : "8em",
+                        "caption" : "spin"
+                    },
+                    {
+                        "id" : "counter",
+                        "type" : "counter",
+                        "width" : "8em",
+                        "caption" : "counter"
+                    },
+                    {
+                        "id" : "currency",
+                        "type" : "currency",
+                        "width" : "8em",
+                        "caption" : "currency"
+                    },
+                    {
+                        "id" : "number",
+                        "type" : "number",
+                        "width" : "8em",
+                        "caption" : "number"
+                    }
+                ])
+                .setRows([
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label1"
+                            },
+                            {
+                                "value" : "input1"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "00:00"
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "#FFFFFF"
+                            },
+                            {
+                                "value" : 12
+                            },
+                            {
+                                "value" : 12
+                            },
+                            {
+                                "value" : 23.44
+                            },
+                            {
+                                "value" : 43.23
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label2"
+                            },
+                            {
+                                "value" : "input2"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "02:00"
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "#F0F0F0"
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 123
+                            },
+                            {
+                                "value" : 56.32
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label3"
+                            },
+                            {
+                                "value" : "input3"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "03:00"
+                            },
+                            {
+                                "value" : "2023-02-06 09:02:01"
+                            },
+                            {
+                                "value" : "#0F0F0F"
+                            },
+                            {
+                                "value" : 0.14
+                            },
+                            {
+                                "value" : 0.14
+                            },
+                            {
+                                "value" : 233.55
+                            },
+                            {
+                                "value" : 43.53
+                            }
+                        ]
+                    }
+                ]),
+                "b"
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -737,11 +989,11 @@ xui.Class('App', 'xui.Module',{
             //xui_ui_comboinput_TermsPeriodofPerformance
 
             
-            var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
-            dlg.append(dlginput = new xui.UI.Input);
-            dlginput.setDock('fill');
-            dlginput.setMultiLines(true);
-            dlginput.setValue("test");
+            //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
+            //dlg.append(dlginput = new xui.UI.Input);
+            //dlginput.setDock('fill');
+            //dlginput.setMultiLines(true);
+            //dlginput.setValue("test");
             
             var RoundedRawCapacityDividedBy100 = Math.ceil(RawCapacityTB / 100);
             var TermYears = Number(this.xui_ui_comboinput_TermsSupportYears.getUIValue());
