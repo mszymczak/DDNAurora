@@ -587,24 +587,24 @@ xui.Class('App', 'xui.Module',{
 //5625
 //42188
             
-            var RoundedRawCapacityDividedBy100 = Math.Round(RawCapacityTB / 100);
-            var TermYears = 3;
-            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
-            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
+//            var RoundedRawCapacityDividedBy100 = Math.Round(RawCapacityTB / 100);
+//            var TermYears = 3;
+//            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
+//            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
 
-            if(RawCapacityTB < 101){
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
-            }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
-            }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
-            }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
-            }
+//            if(RawCapacityTB < 101){
+//                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
+//                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+//            }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
+//                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
+//                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+//            }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
+//                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
+//                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+//            }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
+//                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
+//                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+//            }
             
         },
 
