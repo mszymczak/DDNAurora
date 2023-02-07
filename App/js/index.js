@@ -207,18 +207,18 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id" : "15",
-                        "caption" : "QLC-E1.s-15360",
+                        "caption" : "15.36 TB QLC-E1.s-15360",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
                         "id" : "30",
-                        "caption" : "QLC-E1.s-30720",
+                        "caption" : "30.72 TB QLC-E1.s-30720",
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
                 .setLeft("1.5238095238095237em")
                 .setTop("17.447619047619046em")
-                .setWidth("15.314285714285715em")
+                .setWidth("26.742857142857144em")
                 .setHeight("6.628571428571429em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
@@ -556,12 +556,12 @@ xui.Class('App', 'xui.Module',{
 
             var StarlingNodeDriveDeviceTypeTB = Number(0);
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
-            case "QLC-E1.s-15360":
+            case "15":
                 StarlingNodeDriveDeviceTypeTB = Number(15.36);
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
                 this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 15.36 TB QLC-E1.s-15360 Device");
                 break;
-            case "QLC-E1.s-30720":
+            case "30":
                 StarlingNodeDriveDeviceTypeTB = Number(30.72);
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
                 this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
