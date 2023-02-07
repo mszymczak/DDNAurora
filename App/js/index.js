@@ -224,7 +224,7 @@ xui.Class('App', 'xui.Module',{
                 .setLabelPos("top")
                 .setLabelCaption("Drive Device Type")
                 .setLabelHAlign("left")
-                .setValue("b"),
+                .setValue("30720"),
                 "b"
             );
             
