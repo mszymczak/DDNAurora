@@ -961,17 +961,17 @@ xui.Class('App', 'xui.Module',{
             //default :
             //}
 
-            //switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
-            //case "Basic Onsite":
-            //    this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
-            //    this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
-            //    break;
-            //case "Premium Onsite":
-            //    this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
-            //    this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
-            //    break;
-            //default :
-            //}
+            switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
+            case "Basic Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                break;
+            case "Premium Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                break;
+            default :
+            }
             
             
         },
