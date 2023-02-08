@@ -465,7 +465,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("48.91428571428571em")
+                .setTop("50.43809523809524em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -483,7 +483,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
                 .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("18.285714285714285em")
-                .setTop("48.91428571428571em")
+                .setTop("50.43809523809524em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -500,7 +500,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("48.91428571428571em")
+                .setTop("50.43809523809524em")
                 .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -834,7 +834,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label146")
                 .setLeft("1.5238095238095237em")
-                .setTop("50.43809523809524em")
+                .setTop("51.96190476190476em")
                 .setWidth("65.6em")
                 .setCaption("Services")
                 .setHAlign("left")
@@ -852,7 +852,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label611")
                 .setLeft("1.5238095238095237em")
-                .setTop("53.48571428571429em")
+                .setTop("55.00952380952381em")
                 .setWidth("15.314285714285715em")
                 .setCaption("PSB-HW-INST")
                 .setHAlign("left")
@@ -869,7 +869,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label612")
                 .setLeft("18.285714285714285em")
-                .setTop("53.48571428571429em")
+                .setTop("55.00952380952381em")
                 .setWidth("3.123809523809524em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -885,7 +885,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label613")
                 .setLeft("22.857142857142858em")
-                .setTop("53.48571428571429em")
+                .setTop("55.00952380952381em")
                 .setWidth("45.02857142857143em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -902,7 +902,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label614")
                 .setLeft("1.5238095238095237em")
-                .setTop("51.96190476190476em")
+                .setTop("53.48571428571429em")
                 .setWidth("15.314285714285715em")
                 .setCaption("PS-CUSTOM")
                 .setHAlign("left")
@@ -919,7 +919,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label615")
                 .setLeft("22.857142857142858em")
-                .setTop("51.96190476190476em")
+                .setTop("53.48571428571429em")
                 .setWidth("45.02857142857143em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -936,7 +936,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label616")
                 .setLeft("18.285714285714285em")
-                .setTop("51.96190476190476em")
+                .setTop("53.48571428571429em")
                 .setWidth("3.123809523809524em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -952,7 +952,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label620")
                 .setLeft("1.5238095238095237em")
-                .setTop("55.00952380952381em")
+                .setTop("56.53333333333333em")
                 .setWidth("15.314285714285715em")
                 .setCaption("PSB-ONSITE")
                 .setHAlign("left")
@@ -969,7 +969,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label621")
                 .setLeft("22.857142857142858em")
-                .setTop("55.00952380952381em")
+                .setTop("56.53333333333333em")
                 .setWidth("45.02857142857143em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -986,7 +986,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label622")
                 .setLeft("18.285714285714285em")
-                .setTop("55.00952380952381em")
+                .setTop("56.53333333333333em")
                 .setWidth("3.123809523809524em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -1011,6 +1011,59 @@ xui.Class('App', 'xui.Module',{
                     "KEY" : {
                         "background-color" : "#DCDCDC",
                         "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label779")
+                .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
+                .setLeft("1.5238095238095237em")
+                .setTop("48.91428571428571em")
+                .setWidth("15.314285714285715em")
+                .setCaption("SUP-SSD-BSPO-1")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label780")
+                .setName("xui_ui_labelBOMStarlingSubscriptionQty")
+                .setLeft("18.285714285714285em")
+                .setTop("48.91428571428571em")
+                .setWidth("3.123809523809524em")
+                .setCaption("0")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label781")
+                .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
+                .setLeft("22.857142857142858em")
+                .setTop("48.91428571428571em")
+                .setWidth("45.02857142857143em")
+                .setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life.")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
                     }
                 }),
                 "b"
