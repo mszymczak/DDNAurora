@@ -960,7 +960,7 @@ xui.Class('App', 'xui.Module',{
                 break;
             default :
             }
-            
+
             switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
             case "Basic Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
