@@ -397,7 +397,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("36.72380952380952em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -414,7 +414,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("39.77142857142857em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -485,7 +485,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("50.43809523809524em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -713,7 +713,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("47.39047619047619em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -820,7 +820,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("45.86666666666667em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -1041,7 +1041,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("18.285714285714285em")
                 .setTop("48.91428571428571em")
                 .setWidth("3.123809523809524em")
-                .setCaption("0")
+                .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
@@ -1169,19 +1169,19 @@ xui.Class('App', 'xui.Module',{
             switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
             case "SUP-POP-INV":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
                 break;
             case "SUP-POP-30D":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
                 break;
             case "SUP-POP-90D":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
                 break;
             case "SUP-POP-ACC":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
                 break;
             default :
             }
@@ -1189,11 +1189,11 @@ xui.Class('App', 'xui.Module',{
             switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
             case "Basic Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
-                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
                 break;
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
-                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
                 break;
             default :
             }
