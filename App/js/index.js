@@ -615,7 +615,7 @@ xui.Class('App', 'xui.Module',{
                         "id" : "SUP-POP-ACC",
                         "caption" : "SUP-POP-ACC",
                         "imageClass" : "xui-icon-number4",
-                        "disabled" : true
+                        "disabled" : false
                     }
                 ])
                 .setValue("SUP-POP-INV")
