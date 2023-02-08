@@ -974,9 +974,6 @@ xui.Class('App', 'xui.Module',{
             //}
             
             
-            this.xui_ui_labelBOMStarlingServicesSKU.setCaption(this.xui_ui_comboinput_TermsSupportType.getUIValue());
-            this.xui_ui_labelBOMStarlingServicesQty.setCaption("1");
-            //xui_ui_labelBOMStarlingServicesDescription
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
