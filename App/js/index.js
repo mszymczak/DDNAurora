@@ -240,6 +240,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_comboinput_StarlingApplianceQty")
                 .setLeft("22.095238095238095em")
                 .setTop("11.352380952380953em")
+                .setZIndex(1002)
                 .setType("counter")
                 .setPrecision(null)
                 .setIncrement(1)
