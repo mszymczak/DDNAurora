@@ -941,37 +941,37 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
             }
             
-            switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
-            case "SUP-POP-INV":
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
-                break;
-            case "SUP-POP-30D":
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
-                break;
-            case "SUP-POP-90D":
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
-                break;
-            case "SUP-POP-ACC":
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
-                break;
-            default :
-            }
+            //switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
+            //case "SUP-POP-INV":
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+            //    break;
+            //case "SUP-POP-30D":
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+            //    break;
+            //case "SUP-POP-90D":
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+            //    break;
+            //case "SUP-POP-ACC":
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+            //    this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+            //    break;
+            //default :
+            //}
 
-            switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
-            case "Basic Onsite":
-                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
-                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
-                break;
-            case "Premium Onsite":
-                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
-                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
-                break;
-            default :
-            }
+            //switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
+            //case "Basic Onsite":
+            //    this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
+            //    this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+            //    break;
+            //case "Premium Onsite":
+            //    this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
+            //    this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+            //    break;
+            //default :
+            //}
             
             
             this.xui_ui_labelBOMStarlingServicesSKU.setCaption(this.xui_ui_comboinput_TermsSupportType.getUIValue());
