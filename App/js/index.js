@@ -461,7 +461,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("56.304761904761904em")
+                .setTop("57.82857142857143em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -479,7 +479,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
                 .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("18.285714285714285em")
-                .setTop("56.304761904761904em")
+                .setTop("57.82857142857143em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -496,7 +496,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("56.304761904761904em")
+                .setTop("57.82857142857143em")
                 .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -668,10 +668,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingSupportSKU")
-                .setName("xui_ui_labelBOMStarlingSupportSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeSKU")
+                .setName("xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("54.78095238095238em")
+                .setTop("56.304761904761904em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -686,10 +686,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingSupportDescription")
-                .setName("xui_ui_labelBOMStarlingSupportDescription")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeDescription")
+                .setName("xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("54.78095238095238em")
+                .setTop("56.304761904761904em")
                 .setWidth("45.02857142857143em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -704,10 +704,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingSupportQty")
-                .setName("xui_ui_labelBOMStarlingSupportQty")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeQty")
+                .setName("xui_ui_labelBOMStarlingSupportTypeQty")
                 .setLeft("18.285714285714285em")
-                .setTop("54.78095238095238em")
+                .setTop("56.304761904761904em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -775,10 +775,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingServicesSKU")
-                .setName("xui_ui_labelBOMStarlingServicesSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
+                .setName("xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("59.352380952380955em")
+                .setTop("54.78095238095238em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -793,10 +793,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingServicesDescription")
-                .setName("xui_ui_labelBOMStarlingServicesDescription")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
+                .setName("xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("59.352380952380955em")
+                .setTop("54.78095238095238em")
                 .setWidth("45.02857142857143em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -811,10 +811,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_labelBOMStarlingServicesQty")
-                .setName("xui_ui_labelBOMStarlingServicesSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceQty")
+                .setName("xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setLeft("18.285714285714285em")
-                .setTop("59.352380952380955em")
+                .setTop("54.78095238095238em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -830,7 +830,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label146")
                 .setLeft("1.5238095238095237em")
-                .setTop("57.82857142857143em")
+                .setTop("59.352380952380955em")
                 .setWidth("65.6em")
                 .setCaption("Services")
                 .setHAlign("left")
@@ -941,21 +941,38 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
             }
             
-            this.xui_ui_labelBOMStarlingSupportSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-            this.xui_ui_labelBOMStarlingSupportQty.setCaption("1");
-            //xui_ui_labelBOMStarlingSupportDescription
-            
-            switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
-            case "Basic Onsite":
-                this.xui_ui_labelBOMStarlingSupportSKU.setCaption("SUP-BSOS-1");
-                this.xui_ui_labelBOMStarlingSupportQty.setCaption("1");
+            switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
+            case "SUP-POP-INV":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
-            case "Premium Onsite":
-                this.xui_ui_labelBOMStarlingSupportSKU.setCaption("SUP-BSOS-3");
-                this.xui_ui_labelBOMStarlingSupportQty.setCaption("1");
+            case "SUP-POP-30D":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                break;
+            case "SUP-POP-90D":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
+                break;
+            case "SUP-POP-ACC":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
             default :
             }
+            
+            switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
+            case "Basic Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                break;
+            case "Premium Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
+                break;
+            default :
+            }
+            
             
             this.xui_ui_labelBOMStarlingServicesSKU.setCaption(this.xui_ui_comboinput_TermsSupportType.getUIValue());
             this.xui_ui_labelBOMStarlingServicesQty.setCaption("1");
