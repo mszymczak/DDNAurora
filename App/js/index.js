@@ -188,7 +188,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label57")
                 .setLeft("1.5238095238095237em")
                 .setTop("31.923809523809524em")
-                .setWidth("45.02857142857143em")
+                .setWidth("54.93333333333333em")
                 .setCaption("Approximate Capacity")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -251,7 +251,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label59")
                 .setLeft("1.5238095238095237em")
                 .setTop("12.876190476190477em")
-                .setWidth("45.02857142857143em")
+                .setWidth("54.93333333333333em")
                 .setCaption("DDN Aurora Appliance")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -291,7 +291,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label75")
                 .setLeft("1.5238095238095237em")
                 .setTop("41.82857142857143em")
-                .setWidth("45.02857142857143em")
+                .setWidth("54.93333333333333em")
                 .setCaption("Configuration")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -342,7 +342,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label80")
                 .setLeft("22.857142857142858em")
                 .setTop("44.34285714285714em")
-                .setWidth("25.21904761904762em")
+                .setWidth("35.12380952380953em")
                 .setCaption("Description")
                 .setHAlign("center")
                 .setCustomStyle({
@@ -374,7 +374,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label82")
                 .setLeft("22.857142857142858em")
                 .setTop("45.86666666666667em")
-                .setWidth("24.457142857142856em")
+                .setWidth("34.36190476190476em")
                 .setCaption("Aurora Starling Appliance with 12x NVME u.2 slots")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -444,7 +444,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("47.39047619047619em")
-                .setWidth("24.457142857142856em")
+                .setWidth("34.36190476190476em")
                 .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -497,7 +497,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("48.91428571428571em")
-                .setWidth("24.457142857142856em")
+                .setWidth("34.36190476190476em")
                 .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -514,7 +514,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label1312")
                 .setLeft("1.5238095238095237em")
                 .setTop("1.4476190476190476em")
-                .setWidth("45.02857142857143em")
+                .setWidth("54.93333333333333em")
                 .setCaption("Terms")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -733,16 +733,16 @@ xui.Class('App', 'xui.Module',{
 
             if(RawCapacityTB < 101){
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription, per 100TB, per year");
             }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 100-750TB Subscription");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 100-750TB Subscription, per 100TB, per year");
             }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 750-5625TB Subscription");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 750-5625TB Subscription, per 100TB, per year");
             }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 5625+TB Subscription");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 5625+TB Subscription, per 100TB, per year");
             }
             
         },
