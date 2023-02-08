@@ -941,10 +941,10 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
             }
             
-            this.xui_ui_labelBOMStarlingSupportSKU.setCaption(xui_ui_comboinput_TermsPeriodofPerformance.getValue());
+            this.xui_ui_labelBOMStarlingSupportSKU.setCaption(xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
             this.xui_ui_labelBOMStarlingSupportQty.setCaption("1");
             //xui_ui_labelBOMStarlingSupportDescription
-            //this.xui_ui_labelBOMStarlingServicesSKU.setCaption(xui_ui_comboinput_TermsSupportType.getValue());
+            //this.xui_ui_labelBOMStarlingServicesSKU.setCaption(xui_ui_comboinput_TermsSupportType.getUIValue());
             this.xui_ui_labelBOMStarlingServicesQty.setCaption("1");
             //xui_ui_labelBOMStarlingServicesDescription
             
