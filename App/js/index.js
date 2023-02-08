@@ -844,6 +844,156 @@ xui.Class('App', 'xui.Module',{
                 "b"
             );
             
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label611")
+                .setLeft("1.5238095238095237em")
+                .setTop("62.4em")
+                .setWidth("15.314285714285715em")
+                .setCaption("PSB-HW-INST")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label612")
+                .setLeft("18.285714285714285em")
+                .setTop("62.4em")
+                .setWidth("3.123809523809524em")
+                .setCaption(".")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label613")
+                .setLeft("22.857142857142858em")
+                .setTop("62.4em")
+                .setWidth("45.02857142857143em")
+                .setCaption(".")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label614")
+                .setLeft("1.5238095238095237em")
+                .setTop("60.87619047619047em")
+                .setWidth("15.314285714285715em")
+                .setCaption("PS-CUSTOM")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label615")
+                .setLeft("22.857142857142858em")
+                .setTop("60.87619047619047em")
+                .setWidth("45.02857142857143em")
+                .setCaption(".")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label616")
+                .setLeft("18.285714285714285em")
+                .setTop("60.87619047619047em")
+                .setWidth("3.123809523809524em")
+                .setCaption(".")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label620")
+                .setLeft("1.5238095238095237em")
+                .setTop("63.923809523809524em")
+                .setWidth("15.314285714285715em")
+                .setCaption("PSB-ONSITE")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label621")
+                .setLeft("22.857142857142858em")
+                .setTop("63.923809523809524em")
+                .setWidth("45.02857142857143em")
+                .setCaption(".")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label622")
+                .setLeft("18.285714285714285em")
+                .setTop("63.923809523809524em")
+                .setWidth("3.123809523809524em")
+                .setCaption(".")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
