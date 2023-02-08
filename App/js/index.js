@@ -449,7 +449,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("39.77142857142857em")
                 .setWidth("45.02857142857143em")
-                .setCaption("Undefined")
+                .setCaption(".")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -502,7 +502,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("50.43809523809524em")
                 .setWidth("45.02857142857143em")
-                .setCaption("Undefined")
+                .setCaption(".")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -1018,12 +1018,12 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label779")
-                .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeSKU")
+                .setName("xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("48.91428571428571em")
                 .setWidth("15.314285714285715em")
-                .setCaption("SUP-SSD-BSPO-1")
+                .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -1036,8 +1036,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label780")
-                .setName("xui_ui_labelBOMStarlingSubscriptionQty")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeQty")
+                .setName("xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setLeft("18.285714285714285em")
                 .setTop("48.91428571428571em")
                 .setWidth("3.123809523809524em")
@@ -1053,12 +1053,12 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs5.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label781")
-                .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeDescription")
+                .setName("xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("48.91428571428571em")
                 .setWidth("45.02857142857143em")
-                .setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life.")
+                .setCaption(".")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -1190,10 +1190,14 @@ xui.Class('App', 'xui.Module',{
             case "Basic Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life.");
                 break;
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-3");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption("Premium Support; SSD Drives; coverage through normal wear life.");
                 break;
             default :
             }
