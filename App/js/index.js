@@ -318,7 +318,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -383,7 +383,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -400,7 +400,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -417,7 +417,8 @@ xui.Class('App', 'xui.Module',{
                 .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
+                        "background-image" : "#00FFFF",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -435,7 +436,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -453,7 +454,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -471,7 +472,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -488,7 +489,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -506,7 +507,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#F5F5F5",
+                        "background-color" : "#00FFFF",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -1190,7 +1191,7 @@ xui.Class('App', 'xui.Module',{
             case "Basic Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
-                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives");
@@ -1198,7 +1199,7 @@ xui.Class('App', 'xui.Module',{
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
-                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-3");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Support; SSD Drives");
