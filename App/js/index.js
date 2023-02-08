@@ -308,7 +308,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label76")
                 .setLeft("1.5238095238095237em")
-                .setTop("45.86666666666667em")
+                .setTop("47.161904761904765em")
                 .setWidth("15.314285714285715em")
                 .setCaption("RS-7313")
                 .setHAlign("left")
@@ -325,7 +325,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label79")
                 .setLeft("1.5238095238095237em")
-                .setTop("44.34285714285714em")
+                .setTop("44.114285714285714em")
                 .setWidth("16.076190476190476em")
                 .setCaption("SKU")
                 .setHAlign("center")
@@ -341,7 +341,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label80")
                 .setLeft("22.857142857142858em")
-                .setTop("44.34285714285714em")
+                .setTop("44.114285714285714em")
                 .setWidth("45.79047619047619em")
                 .setCaption("Description")
                 .setHAlign("center")
@@ -357,7 +357,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label81")
                 .setLeft("18.285714285714285em")
-                .setTop("44.34285714285714em")
+                .setTop("44.114285714285714em")
                 .setWidth("3.8857142857142857em")
                 .setCaption("Qty")
                 .setHAlign("center")
@@ -373,7 +373,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label82")
                 .setLeft("22.857142857142858em")
-                .setTop("45.86666666666667em")
+                .setTop("47.161904761904765em")
                 .setWidth("45.02857142857143em")
                 .setCaption("Starling Appliance with 12x NVME u.2 slots, 4x HDR ports, power cables, rack mount kit.")
                 .setHAlign("left")
@@ -391,7 +391,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingApplianceQty")
                 .setName("xui_ui_labelBOMStarlingApplianceQty")
                 .setLeft("18.285714285714285em")
-                .setTop("45.86666666666667em")
+                .setTop("47.161904761904765em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -408,7 +408,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setLeft("18.285714285714285em")
-                .setTop("47.39047619047619em")
+                .setTop("48.68571428571428em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -425,7 +425,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("47.39047619047619em")
+                .setTop("48.68571428571428em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -443,7 +443,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("47.39047619047619em")
+                .setTop("48.68571428571428em")
                 .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -461,7 +461,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("48.91428571428571em")
+                .setTop("50.20952380952381em")
                 .setWidth("15.314285714285715em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -479,7 +479,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
                 .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("18.285714285714285em")
-                .setTop("48.91428571428571em")
+                .setTop("50.20952380952381em")
                 .setWidth("3.123809523809524em")
                 .setCaption("0")
                 .setCustomStyle({
@@ -496,7 +496,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("48.91428571428571em")
+                .setTop("50.20952380952381em")
                 .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -648,6 +648,202 @@ xui.Class('App', 'xui.Module',{
                 "b"
             );
             
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label133")
+                .setLeft("1.5238095238095237em")
+                .setTop("45.63809523809524em")
+                .setWidth("65.6em")
+                .setCaption("Storage Systems")
+                .setHAlign("left")
+                .setFontColor("#000000")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportSKU")
+                .setLeft("1.5238095238095237em")
+                .setTop("56.304761904761904em")
+                .setWidth("15.314285714285715em")
+                .setCaption("Undefined")
+                .setHAlign("left")
+                .setName("xui_ui_labelBOMStarlingSupportSKU")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportDescription")
+                .setLeft("22.857142857142858em")
+                .setTop("56.304761904761904em")
+                .setWidth("45.02857142857143em")
+                .setCaption(".")
+                .setHAlign("left")
+                .setName("xui_ui_labelBOMStarlingSupportDescription")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label139")
+                .setName("xui_ui_labelBOMStarlingApplianceQty")
+                .setLeft("18.285714285714285em")
+                .setTop("56.304761904761904em")
+                .setWidth("3.123809523809524em")
+                .setCaption("0")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label140")
+                .setLeft("1.5238095238095237em")
+                .setTop("54.78095238095238em")
+                .setWidth("65.6em")
+                .setCaption("Support")
+                .setHAlign("left")
+                .setFontColor("#000000")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label141")
+                .setLeft("1.5238095238095237em")
+                .setTop("51.733333333333334em")
+                .setWidth("65.6em")
+                .setCaption("Other Equipment")
+                .setHAlign("left")
+                .setFontColor("#000000")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label142")
+                .setLeft("1.5238095238095237em")
+                .setTop("53.25714285714286em")
+                .setWidth("65.6em")
+                .setCaption("Software")
+                .setHAlign("left")
+                .setFontColor("#000000")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingServicesSKU")
+                .setLeft("1.5238095238095237em")
+                .setTop("59.352380952380955em")
+                .setWidth("15.314285714285715em")
+                .setCaption("Undefined")
+                .setHAlign("left")
+                .setName("xui_ui_labelBOMStarlingServicesSKU")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingServicesDescription")
+                .setLeft("22.857142857142858em")
+                .setTop("59.352380952380955em")
+                .setWidth("45.02857142857143em")
+                .setCaption(".")
+                .setHAlign("left")
+                .setName("xui_ui_labelBOMStarlingServicesDescription")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label145")
+                .setName("xui_ui_labelBOMStarlingApplianceQty")
+                .setLeft("18.285714285714285em")
+                .setTop("59.352380952380955em")
+                .setWidth("3.123809523809524em")
+                .setCaption("0")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs5.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label146")
+                .setLeft("1.5238095238095237em")
+                .setTop("57.82857142857143em")
+                .setWidth("65.6em")
+                .setCaption("Services")
+                .setHAlign("left")
+                .setFontColor("#000000")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#DCDCDC",
+                        "padding" : "0px 0px 0px 20px"
+                    }
+                }),
+                "b"
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -744,6 +940,11 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
                 this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
             }
+            
+            //xui_ui_labelBOMStarlingSupportSKU
+            //xui_ui_labelBOMStarlingSupportDescription
+            //xui_ui_labelBOMStarlingServicesSKU
+            //xui_ui_labelBOMStarlingServicesDescription
             
         },
 
