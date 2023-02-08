@@ -1190,14 +1190,18 @@ xui.Class('App', 'xui.Module',{
             case "Basic Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life.");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives");
                 break;
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-3");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption("Premium Support; SSD Drives; coverage through normal wear life.");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Support; SSD Drives");
                 break;
             default :
             }
