@@ -188,7 +188,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label57")
                 .setLeft("1.5238095238095237em")
                 .setTop("31.923809523809524em")
-                .setWidth("54.93333333333333em")
+                .setWidth("65.6em")
                 .setCaption("Approximate Capacity")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -251,7 +251,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label59")
                 .setLeft("1.5238095238095237em")
                 .setTop("12.876190476190477em")
-                .setWidth("54.93333333333333em")
+                .setWidth("65.6em")
                 .setCaption("DDN Aurora Appliance")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -291,7 +291,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label75")
                 .setLeft("1.5238095238095237em")
                 .setTop("41.82857142857143em")
-                .setWidth("54.93333333333333em")
+                .setWidth("65.6em")
                 .setCaption("Configuration")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -342,7 +342,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label80")
                 .setLeft("22.857142857142858em")
                 .setTop("44.34285714285714em")
-                .setWidth("35.12380952380953em")
+                .setWidth("45.79047619047619em")
                 .setCaption("Description")
                 .setHAlign("center")
                 .setCustomStyle({
@@ -374,8 +374,8 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label82")
                 .setLeft("22.857142857142858em")
                 .setTop("45.86666666666667em")
-                .setWidth("34.36190476190476em")
-                .setCaption("Aurora Starling Appliance with 12x NVME u.2 slots")
+                .setWidth("45.02857142857143em")
+                .setCaption("Starling Appliance with 12x NVME u.2 slots, 4x HDR ports, power cables, rack mount kit.")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -444,7 +444,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("47.39047619047619em")
-                .setWidth("34.36190476190476em")
+                .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -497,7 +497,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("48.91428571428571em")
-                .setWidth("34.36190476190476em")
+                .setWidth("45.02857142857143em")
                 .setCaption("Undefined")
                 .setHAlign("left")
                 .setCustomStyle({
@@ -514,7 +514,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label1312")
                 .setLeft("1.5238095238095237em")
                 .setTop("1.4476190476190476em")
-                .setWidth("54.93333333333333em")
+                .setWidth("65.6em")
                 .setCaption("Terms")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
@@ -690,13 +690,13 @@ xui.Class('App', 'xui.Module',{
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
             case "15":
                 StarlingNodeDriveDeviceTypeTB = Number(15.36);
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-15360");
-                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 15.36 TB QLC-E1.s-15360 Device");
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q1536O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("15.36TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
                 break;
             case "30":
                 StarlingNodeDriveDeviceTypeTB = Number(30.72);
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("QLC-E1.s-30720");
-                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("Aurora Starling 30.72 TB QLC-E1.s-30720 Device");
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q3072O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("30.72TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
                 break;
             default :
             }            
@@ -733,16 +733,16 @@ xui.Class('App', 'xui.Module',{
 
             if(RawCapacityTB < 101){
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 0-100TB Subscription, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 0-100TB, per 100TB, per year");
             }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 100-750TB Subscription, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 100-750TB, per 100TB, per year");
             }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 750-5625TB Subscription, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 750-5625TB, per 100TB, per year");
             }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora 5625+TB Subscription, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
             }
             
         },
