@@ -271,7 +271,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput510")
+                .setHost(host,"xui_ui_comboinput_StarlingApplianceQty")
                 .setName("xui_ui_comboinput_StarlingApplianceQty")
                 .setLeft("22.095238095238095em")
                 .setTop("11.352380952380953em")
@@ -1202,7 +1202,7 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_forward_capacity:function(){
             
-            xui.message('ok3');
+            xui.message('ok4');
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
