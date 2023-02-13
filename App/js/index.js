@@ -44,7 +44,7 @@ xui.Class('App', 'xui.Module',{
                         "id" : "after",
                         "pos" : "after",
                         "min" : 10,
-                        "size" : 40,
+                        "size" : 60,
                         "locked" : false,
                         "folded" : false,
                         "hidden" : false,
@@ -1128,11 +1128,28 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_layout7.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1562")
-                .setLeft("0.7619047619047619em")
-                .setTop("0.6095238095238096em")
+                .setLeft("0.8333333333333334em")
+                .setTop("0.16666666666666666em")
                 .setWidth("63.833333333333336em")
-                .setHeight("1em")
-                .setCaption("© 2022 DataDirect Networks, All Rights Reserved. | Privacy Policy *Other Names and Brands May Be Claimed as the Property of Others.")
+                .setHeight("1.1666666666666667em")
+                .setCaption("© 2022 DataDirect Networks, All Rights Reserved.")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "font-size" : "12px"
+                    }
+                }),
+                "after"
+            );
+            
+            host.xui_ui_layout7.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label1734")
+                .setLeft("0.8333333333333334em")
+                .setTop("1.5em")
+                .setWidth("63.833333333333336em")
+                .setHeight("1.1666666666666667em")
+                .setCaption("General Enquiries: +1 818 700 4000, info@ddn.com")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
