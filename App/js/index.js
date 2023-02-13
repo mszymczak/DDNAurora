@@ -1202,7 +1202,36 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_forward_capacity:function(){
             
-            xui.message('ok');
+            xui.message('ok2');
+            
+            var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
+            
+            var StarlingNodeDriveDevicePopulation = 0;           
+            switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
+            case "P":
+                StarlingNodeDriveDevicePopulation = 6;
+                break;
+            case "F":
+                StarlingNodeDriveDevicePopulation = 12;
+                break;
+            default :
+            }            
+            var StarlingDriveDeviceQty = StarlingApplianceQty * StarlingNodeDriveDevicePopulation;
+
+            var StarlingNodeDriveDeviceTypeTB = Number(0);
+            switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
+            case "15":
+                StarlingNodeDriveDeviceTypeTB = Number(15.36);
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q1536O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("15.36TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
+                break;
+            case "30":
+                StarlingNodeDriveDeviceTypeTB = Number(30.72);
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q3072O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("30.72TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
+                break;
+            default :
+            }        
             
         },
 
