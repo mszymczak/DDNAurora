@@ -1149,7 +1149,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.5em")
                 .setWidth("63.833333333333336em")
                 .setHeight("1.1666666666666667em")
-                .setCaption("General Enquiries: +1 818 700 4000, info@ddn.com")
+                .setCaption("General Enquiries: +1 818 700 4000, 9351 Deering Avenue, Chatsworth, CA 91311")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -1157,6 +1157,25 @@ xui.Class('App', 'xui.Module',{
                     }
                 }),
                 "after"
+            );
+            
+            host.xui_ui_layout7.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label2083")
+                .setLeft("1.4285714285714286em")
+                .setTop("1.4285714285714286em")
+                .setWidth("31.6875em")
+                .setHeight("1.8125em")
+                .setCaption("Experimental - Not for Production Use")
+                .setHAlign("left")
+                .setFontColor("#DC143C")
+                .setCustomStyle({
+                    "KEY" : {
+                        "font-size" : "14px",
+                        "font-style" : "normal"
+                    }
+                }),
+                "before"
             );
             
             return children;
