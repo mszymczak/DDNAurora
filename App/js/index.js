@@ -1202,7 +1202,7 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_forward_capacity:function(){
             
-            xui.message('ok2');
+            xui.message('ok3');
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
