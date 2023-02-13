@@ -1202,7 +1202,7 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_forward_capacity:function(){
             
-            xui.message('ok5');
+            xui.message('ok6');
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
@@ -1288,6 +1288,25 @@ xui.Class('App', 'xui.Module',{
             default :
             }
             
+            switch (this.xui_ui_comboinput_TermsSupportType.getUIValue()){
+            case "Basic Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-1");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support; storage systems, storage servers");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives");
+                break;
+            case "Premium Onsite":
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
+                this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support; storage systems, storage servers");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-3");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Support; SSD Drives");
+                break;
+            default :
+            }
         },
 
         // Give a chance to determine which UI controls will be appended to parent container
