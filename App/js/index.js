@@ -85,7 +85,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1393")
+                .setHost(host,"xui_ui_lblUsableCapacityTB")
                 .setName("xui_ui_lblUsableCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("26.81904761904762em")
@@ -102,7 +102,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1394")
+                .setHost(host,"xui_ui_lblEffectiveCapacityTB")
                 .setName("xui_ui_lblEffectiveCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("28.34285714285714em")
@@ -141,7 +141,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1397")
+                .setHost(host,"xui_ui_lblRawCapacityTB")
                 .setName("xui_ui_lblRawCapacityTB")
                 .setLeft("10.666666666666666em")
                 .setTop("25.295238095238094em")
@@ -158,7 +158,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox59")
+                .setHost(host,"xui_ui_radioboxNodeDriveDevicePopulation")
                 .setName("xui_ui_radioboxNodeDriveDevicePopulation")
                 .setItems([
                     {
@@ -238,7 +238,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.RadioBox")
-                .setHost(host,"xui_ui_radiobox60")
+                .setHost(host,"xui_ui_radioboxNodeDriveDeviceType")
                 .setName("xui_ui_radioboxNodeDriveDeviceType")
                 .setItems([
                     {
@@ -431,7 +431,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1411")
+                .setHost(host,"xui_ui_labelBOMStarlingApplianceQty")
                 .setName("xui_ui_labelBOMStarlingApplianceQty")
                 .setLeft("16.761904761904763em")
                 .setTop("36.72380952380952em")
@@ -448,7 +448,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1412")
+                .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setLeft("16.761904761904763em")
                 .setTop("39.77142857142857em")
@@ -465,7 +465,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1413")
+                .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("39.77142857142857em")
@@ -483,7 +483,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1414")
+                .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("39.77142857142857em")
@@ -501,7 +501,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1415")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("50.43809523809524em")
@@ -519,7 +519,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1416")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
                 .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("16.761904761904763em")
                 .setTop("50.43809523809524em")
@@ -536,7 +536,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1417")
+                .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("50.43809523809524em")
@@ -594,7 +594,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput511")
+                .setHost(host,"xui_ui_comboinput_TermsSupportYears")
                 .setName("xui_ui_comboinput_TermsSupportYears")
                 .setLeft("26.666666666666668em")
                 .setTop("5.485714285714286em")
@@ -632,7 +632,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput512")
+                .setHost(host,"xui_ui_comboinput_TermsPeriodofPerformance")
                 .setName("xui_ui_comboinput_TermsPeriodofPerformance")
                 .setLeft("2.2857142857142856em")
                 .setTop("5.485714285714286em")
@@ -668,7 +668,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput513")
+                .setHost(host,"xui_ui_comboinput_TermsSupportType")
                 .setName("xui_ui_comboinput_TermsSupportType")
                 .setLeft("14.476190476190476em")
                 .setTop("5.485714285714286em")
@@ -711,7 +711,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1424")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("47.39047619047619em")
@@ -729,7 +729,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1425")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("47.39047619047619em")
@@ -747,7 +747,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1426")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSupportTypeQty")
                 .setLeft("16.761904761904763em")
                 .setTop("47.39047619047619em")
@@ -818,7 +818,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1430")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setName("xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("45.86666666666667em")
@@ -836,7 +836,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1431")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
                 .setName("xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("45.86666666666667em")
@@ -854,8 +854,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1432")
-                .setName("xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceQty")
+                .setName("xui_ui_labelBOMStarlingPeriodofPerformanceQty")
                 .setLeft("16.761904761904763em")
                 .setTop("45.86666666666667em")
                 .setWidth("4.647619047619048em")
@@ -1057,7 +1057,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1444")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("48.91428571428571em")
@@ -1075,7 +1075,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1445")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setLeft("16.761904761904763em")
                 .setTop("48.91428571428571em")
@@ -1092,7 +1092,7 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1446")
+                .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("48.91428571428571em")
