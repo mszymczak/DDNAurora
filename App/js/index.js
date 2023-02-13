@@ -1202,7 +1202,7 @@ xui.Class('App', 'xui.Module',{
                 
         _refresh_tab_forward_capacity:function(){
             
-            xui.message('ok4');
+            xui.message('ok5');
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
@@ -1232,6 +1232,61 @@ xui.Class('App', 'xui.Module',{
                 break;
             default :
             }        
+            
+            var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
+            var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
+                        
+            this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB.toFixed(2));
+            this.xui_ui_lblUsableCapacityTB.setCaption(UsableCapacityTB.toFixed(2));
+            //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
+            
+            this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
+            this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
+           
+            //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
+            //dlg.append(dlginput = new xui.UI.Input);
+            //dlginput.setDock('fill');
+            //dlginput.setMultiLines(true);
+            //dlginput.setValue("test");
+            
+            var RoundedRawCapacityDividedBy100 = Math.ceil(RawCapacityTB / 100);
+            var TermYears = Number(this.xui_ui_comboinput_TermsSupportYears.getUIValue());
+            var BOMStarlingSubscriptionQty = RoundedRawCapacityDividedBy100 * TermYears;
+            this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
+
+            if(RawCapacityTB < 101){
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 0-100TB, per 100TB, per year");
+            }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 100-750TB, per 100TB, per year");
+            }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 750-5625TB, per 100TB, per year");
+            }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
+            }
+            
+            switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
+            case "SUP-POP-INV":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
+                break;
+            case "SUP-POP-30D":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
+                break;
+            case "SUP-POP-90D":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
+                break;
+            case "SUP-POP-ACC":
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption(".");
+                break;
+            default :
+            }
             
         },
 
