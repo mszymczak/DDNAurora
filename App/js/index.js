@@ -1126,7 +1126,7 @@ xui.Class('App', 'xui.Module',{
             default :
             }            
             
-            var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB; // StarlingNodeDriveDeviceTypeTB;
+            var RawCapacityTB = StarlingDriveDeviceQty * StarlingNodeDriveDeviceTypeTB;
             var UsableCapacityTB = RawCapacityTB * 0.8 * (23/24) * 0.9;
                         
             this.xui_ui_lblRawCapacityTB.setCaption(RawCapacityTB.toFixed(2));
@@ -1135,16 +1135,7 @@ xui.Class('App', 'xui.Module',{
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
-                        
-//100
-//750
-//5625
-//42188
-            //xui_ui_comboinput_TermsSupportType
-            //xui_ui_comboinput_TermsSupportYears
-            //xui_ui_comboinput_TermsPeriodofPerformance
-
-            
+           
             //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
             //dlg.append(dlginput = new xui.UI.Input);
             //dlginput.setDock('fill');
