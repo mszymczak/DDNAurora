@@ -939,23 +939,6 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1437")
-                .setLeft("1.5238095238095237em")
-                .setTop("53.48571428571429em")
-                .setWidth("13.790476190476191em")
-                .setCaption("PS-CUSTOM")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1438")
                 .setLeft("22.857142857142858em")
                 .setTop("53.48571428571429em")
@@ -1108,6 +1091,24 @@ xui.Class('App', 'xui.Module',{
                 "b"
             );
             
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label1437")
+                .setLocked(true)
+                .setLeft("1.5238095238095237em")
+                .setTop("53.48571428571429em")
+                .setWidth("13.790476190476191em")
+                .setCaption("PS-CUSTOM")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
             host.xui_ui_layout7.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1449")
@@ -1164,9 +1165,9 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label2083")
                 .setLeft("1.4285714285714286em")
                 .setTop("1.4285714285714286em")
-                .setWidth("31.6875em")
+                .setWidth("53.857142857142854em")
                 .setHeight("1.8125em")
-                .setCaption("Experimental - Not for Production Use")
+                .setCaption("Experimental - Not for Production Use - For DDN Employee Use ONLY")
                 .setHAlign("left")
                 .setFontColor("#DC143C")
                 .setCustomStyle({
@@ -1201,8 +1202,6 @@ xui.Class('App', 'xui.Module',{
         },
                 
         _refresh_tab_forward_capacity:function(){
-            
-            xui.message('ok6');
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
