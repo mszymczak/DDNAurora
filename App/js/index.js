@@ -975,24 +975,6 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1437")
-                .setLocked(true)
-                .setLeft("1.5238095238095237em")
-                .setTop("53.48571428571429em")
-                .setWidth("13.790476190476191em")
-                .setCaption("PS-CUSTOM")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Tabs")
                 .setHost(host,"xui_ui_tabs5")
                 .setItems([
@@ -1136,6 +1118,23 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("TB")
                 .setHAlign("left"),
                 "capacity"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label1437")
+                .setLeft("1.5238095238095237em")
+                .setTop("57.82857142857143em")
+                .setWidth("13.790476190476191em")
+                .setCaption("PS-CUSTOM")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
             );
             
             host.xui_ui_layout7.append(
