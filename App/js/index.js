@@ -107,7 +107,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("23.00952380952381em")
                 .setWidth("65.6em")
-                .setCaption("Approximate Capacity")
+                .setCaption("Technical Attributes")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
                 .setCustomStyle({
@@ -175,7 +175,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("9.066666666666666em")
                 .setWidth("65.6em")
-                .setCaption("DDN Aurora Appliance")
+                .setCaption("Technical Design")
                 .setHAlign("left")
                 .setFontColor("#FFFFFF")
                 .setCustomStyle({
@@ -1092,7 +1092,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label84")
                 .setLeft("20.571428571428573em")
                 .setTop("0.7619047619047619em")
-                .setWidth("10.361904761904762em")
+                .setWidth("35.50476190476191em")
                 .setCaption("TB")
                 .setHAlign("left"),
                 "capacity"
@@ -1103,8 +1103,8 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label85")
                 .setLeft("20.571428571428573em")
                 .setTop("2.2857142857142856em")
-                .setWidth("10.361904761904762em")
-                .setCaption("TB")
+                .setWidth("35.50476190476191em")
+                .setCaption("TB (approximate)")
                 .setHAlign("left"),
                 "capacity"
             );
@@ -1114,8 +1114,8 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label86")
                 .setLeft("20.571428571428573em")
                 .setTop("3.8095238095238093em")
-                .setWidth("10.361904761904762em")
-                .setCaption("TB")
+                .setWidth("35.50476190476191em")
+                .setCaption("TB (approximate)")
                 .setHAlign("left"),
                 "capacity"
             );
