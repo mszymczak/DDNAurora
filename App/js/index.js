@@ -1283,16 +1283,16 @@ xui.Class('App', 'xui.Module',{
 
             if(RawCapacityTB < 101){
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 0-100TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 1-100TB, per 100TB, per year");
             }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
                 this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 100-750TB, per 100TB, per year");
             }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 750-5625TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 750-5,625TB, per 100TB, per year");
             }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
                 this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5625+TB , per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5,625+TB, per 100TB, per year");
             }
             
             switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
@@ -1322,7 +1322,7 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wearl life; use only with BSPO offerings; price is per SSD; annual");
                 break;
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
