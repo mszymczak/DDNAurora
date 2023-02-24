@@ -125,19 +125,23 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_radioboxNodeDriveDeviceType")
                 .setItems([
                     {
+                        "id" : "7",
+                        "caption" : "7.68 TB QLC-E1.s-7688",
+                        "imageClass" : ""
+                    },
+                    {
                         "id" : "15",
                         "caption" : "15.36 TB QLC-E1.s-15360",
                         "imageClass" : ""
                     },
                     {
                         "id" : "30",
-                        "caption" : "30.72 TB QLC-E1.s-30720",
-                        "imageClass" : ""
+                        "caption" : "30.72 TB QLC-E1.s-30720"
                     }
                 ])
                 .setLeft("3.0476190476190474em")
                 .setTop("18.20952380952381em")
-                .setWidth("54.17142857142857em")
+                .setWidth("57.21904761904762em")
                 .setHeight("4.571428571428571em")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
@@ -1247,6 +1251,11 @@ xui.Class('App', 'xui.Module',{
 
             var StarlingNodeDriveDeviceTypeTB = Number(0);
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
+            case "7":
+                StarlingNodeDriveDeviceTypeTB = Number(7.68);
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q0768O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("7.68TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
+                break;
             case "15":
                 StarlingNodeDriveDeviceTypeTB = Number(15.36);
                 this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q1536O24NKK3");
