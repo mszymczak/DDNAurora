@@ -1165,7 +1165,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0.16666666666666666em")
                 .setWidth("63.833333333333336em")
                 .setHeight("1.1666666666666667em")
-                .setCaption("© 2022 DataDirect Networks, All Rights Reserved.")
+                .setCaption("© 2023 DataDirect Networks, All Rights Reserved.")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
