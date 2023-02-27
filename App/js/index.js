@@ -1210,6 +1210,7 @@ xui.Class('App', 'xui.Module',{
                 .setName("xui_ui_comboinput_100GbEthernet3m")
                 .setLeft("43.42857142857143em")
                 .setTop("13.104761904761904em")
+                .setWidth("22.933333333333334em")
                 .setLabelSize("auto")
                 .setType("listbox")
                 .setItems([
@@ -1224,7 +1225,6 @@ xui.Class('App', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setWidth("14.552380952380952em")
                 .setValue("None")
                 .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
