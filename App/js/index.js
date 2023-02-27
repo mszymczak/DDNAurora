@@ -1150,7 +1150,7 @@ xui.Class('App', 'xui.Module',{
                 .setCaption(".")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#00FF00",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 10px 0px 0px"
                     }
                 }),
@@ -1168,7 +1168,7 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#00FF00",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -1186,10 +1186,34 @@ xui.Class('App', 'xui.Module',{
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
-                        "background-color" : "#00FF00",
+                        "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
+                "b"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label600")
+                .setLeft("43.42857142857143em")
+                .setTop("11.504761904761905em")
+                .setWidth("11.885714285714286em")
+                .setCaption("Cables")
+                .setHAlign("left"),
+                "b"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"xui_ui_checkbox100GbEthernet3m")
+                .setLeft("44.19047619047619em")
+                .setTop("13.028571428571428em")
+                .setWidth("20.419047619047618em")
+                .setHeight("0.22857142857142856em")
+                .setCaption("100Gb/s Copper Ethernet, QSFP28, 3m")
+                .setName("xui_ui_checkbox100GbEthernet3m")
+                .setValue(true),
                 "b"
             );
             
@@ -1288,7 +1312,13 @@ xui.Class('App', 'xui.Module',{
         _refresh_tab_forward_capacity:function(){
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
-            this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
+            
+            if (this.xui_ui_checkbox100GbEthernet3m.getVAlign(true)) {
+                this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
+            }else{
+                this.xui_ui_labelBOMStarlingCableQty.setCaption(0);
+            }
+               
             
             var StarlingNodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
