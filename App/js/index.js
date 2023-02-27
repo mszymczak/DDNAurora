@@ -216,7 +216,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1405")
                 .setLeft("1.5238095238095237em")
-                .setTop("32.838095238095235em")
+                .setTop("33.2952380952381em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Configuration")
                 .setHAlign("left")
@@ -234,7 +234,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1406")
                 .setLeft("1.5238095238095237em")
-                .setTop("41.98095238095238em")
+                .setTop("44.114285714285714em")
                 .setWidth("13.790476190476191em")
                 .setCaption("RS-7313")
                 .setHAlign("left")
@@ -251,7 +251,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1407")
                 .setLeft("1.5238095238095237em")
-                .setTop("34.36190476190476em")
+                .setTop("34.819047619047616em")
                 .setWidth("14.552380952380952em")
                 .setCaption("SKU")
                 .setHAlign("center")
@@ -268,7 +268,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1408")
                 .setLeft("22.857142857142858em")
-                .setTop("34.36190476190476em")
+                .setTop("34.819047619047616em")
                 .setWidth("66.36190476190477em")
                 .setCaption("Description")
                 .setHAlign("center")
@@ -285,7 +285,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1409")
                 .setLeft("16.761904761904763em")
-                .setTop("34.36190476190476em")
+                .setTop("34.819047619047616em")
                 .setWidth("5.40952380952381em")
                 .setCaption("Qty")
                 .setHAlign("center")
@@ -302,7 +302,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1410")
                 .setLeft("22.857142857142858em")
-                .setTop("41.98095238095238em")
+                .setTop("44.114285714285714em")
                 .setWidth("65.6em")
                 .setCaption("Starling Appliance with 12x NVME u.2 slots, 4x HDR ports, power cables, rack mount kit.")
                 .setHAlign("left")
@@ -320,7 +320,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingApplianceQty")
                 .setName("xui_ui_labelBOMStarlingApplianceQty")
                 .setLeft("16.761904761904763em")
-                .setTop("41.98095238095238em")
+                .setTop("44.114285714285714em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -337,7 +337,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceQty")
                 .setLeft("16.761904761904763em")
-                .setTop("38.93333333333333em")
+                .setTop("41.06666666666667em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -354,7 +354,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("38.93333333333333em")
+                .setTop("41.06666666666667em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -372,7 +372,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setName("xui_ui_labelBOMStarlingDriveDeviceDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("38.93333333333333em")
+                .setTop("41.06666666666667em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -390,7 +390,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setName("xui_ui_labelBOMStarlingSubscriptionSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("45.02857142857143em")
+                .setTop("47.161904761904765em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -408,7 +408,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionQty")
                 .setName("xui_ui_labelBOMStarlingSubscriptionQty")
                 .setLeft("16.761904761904763em")
-                .setTop("45.02857142857143em")
+                .setTop("47.161904761904765em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -425,7 +425,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setName("xui_ui_labelBOMStarlingSubscriptionDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("45.02857142857143em")
+                .setTop("47.161904761904765em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -581,7 +581,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1423")
                 .setLeft("1.5238095238095237em")
-                .setTop("35.885714285714286em")
+                .setTop("36.34285714285714em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Storage Systems")
                 .setHAlign("left")
@@ -600,7 +600,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("50.20952380952381em")
+                .setTop("52.34285714285714em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -618,7 +618,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("50.20952380952381em")
+                .setTop("52.34285714285714em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -636,7 +636,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSupportTypeQty")
                 .setLeft("16.761904761904763em")
-                .setTop("50.20952380952381em")
+                .setTop("52.34285714285714em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -652,7 +652,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1427")
                 .setLeft("1.5238095238095237em")
-                .setTop("47.161904761904765em")
+                .setTop("49.2952380952381em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Support")
                 .setHAlign("left")
@@ -670,7 +670,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1428")
                 .setLeft("1.5238095238095237em")
-                .setTop("40.457142857142856em")
+                .setTop("42.59047619047619em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Other Equipment")
                 .setHAlign("left")
@@ -688,7 +688,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1429")
                 .setLeft("1.5238095238095237em")
-                .setTop("43.50476190476191em")
+                .setTop("45.63809523809524em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Software")
                 .setHAlign("left")
@@ -707,7 +707,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setName("xui_ui_labelBOMStarlingPeriodofPerformanceSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("48.68571428571428em")
+                .setTop("50.819047619047616em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -725,7 +725,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
                 .setName("xui_ui_labelBOMStarlingPeriodofPerformanceDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("48.68571428571428em")
+                .setTop("50.819047619047616em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -743,7 +743,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingPeriodofPerformanceQty")
                 .setName("xui_ui_labelBOMStarlingPeriodofPerformanceQty")
                 .setLeft("16.761904761904763em")
-                .setTop("48.68571428571428em")
+                .setTop("50.819047619047616em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -759,7 +759,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1433")
                 .setLeft("1.5238095238095237em")
-                .setTop("53.40952380952381em")
+                .setTop("55.542857142857144em")
                 .setWidth("86.17142857142858em")
                 .setCaption("Services")
                 .setHAlign("left")
@@ -777,7 +777,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1434")
                 .setLeft("1.5238095238095237em")
-                .setTop("54.93333333333333em")
+                .setTop("57.06666666666667em")
                 .setWidth("13.790476190476191em")
                 .setCaption("PSB-HW-INST")
                 .setHAlign("left")
@@ -794,7 +794,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1435")
                 .setLeft("16.761904761904763em")
-                .setTop("54.93333333333333em")
+                .setTop("57.06666666666667em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -810,7 +810,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1436")
                 .setLeft("22.857142857142858em")
-                .setTop("54.93333333333333em")
+                .setTop("57.06666666666667em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -827,7 +827,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1438")
                 .setLeft("22.857142857142858em")
-                .setTop("56.457142857142856em")
+                .setTop("58.59047619047619em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -844,7 +844,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1439")
                 .setLeft("16.761904761904763em")
-                .setTop("56.457142857142856em")
+                .setTop("58.59047619047619em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -860,7 +860,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1440")
                 .setLeft("1.5238095238095237em")
-                .setTop("57.98095238095238em")
+                .setTop("60.114285714285714em")
                 .setWidth("13.790476190476191em")
                 .setCaption("PSB-ONSITE")
                 .setHAlign("left")
@@ -877,7 +877,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1441")
                 .setLeft("22.857142857142858em")
-                .setTop("57.98095238095238em")
+                .setTop("60.114285714285714em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -894,7 +894,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1442")
                 .setLeft("16.761904761904763em")
-                .setTop("57.98095238095238em")
+                .setTop("60.114285714285714em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -910,7 +910,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1443")
                 .setLeft("1.5238095238095237em")
-                .setTop("37.40952380952381em")
+                .setTop("39.39047619047619em")
                 .setWidth("86.17142857142858em")
                 .setCaption("SSDs > 8TB")
                 .setHAlign("left")
@@ -929,7 +929,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("51.733333333333334em")
+                .setTop("53.86666666666667em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -947,7 +947,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setLeft("16.761904761904763em")
-                .setTop("51.733333333333334em")
+                .setTop("53.86666666666667em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -964,7 +964,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("51.733333333333334em")
+                .setTop("53.86666666666667em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -1127,13 +1127,66 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1437")
                 .setLeft("1.5238095238095237em")
-                .setTop("56.457142857142856em")
+                .setTop("58.59047619047619em")
                 .setWidth("13.790476190476191em")
                 .setCaption("PS-CUSTOM")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingCableQty")
+                .setName("xui_ui_labelBOMStarlingCableQty")
+                .setLeft("16.761904761904763em")
+                .setTop("37.86666666666667em")
+                .setWidth("4.647619047619048em")
+                .setCaption(".")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#00FF00",
+                        "padding" : "0px 10px 0px 0px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingCableSKU")
+                .setName("xui_ui_labelBOMStarlingCableSKU")
+                .setLeft("1.5238095238095237em")
+                .setTop("37.86666666666667em")
+                .setWidth("13.790476190476191em")
+                .setCaption("CBL-100G-GE-CU-003")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#00FF00",
+                        "padding" : "0px 0px 0px 10px"
+                    }
+                }),
+                "b"
+            );
+            
+            host.xui_ui_tabs33.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_labelBOMStarlingCableDescription")
+                .setName("xui_ui_labelBOMStarlingCableDescription")
+                .setLeft("22.857142857142858em")
+                .setTop("37.86666666666667em")
+                .setWidth("65.6em")
+                .setCaption("Passive copper cable, Ethernet, up to 100Gb/s, QSFP28, low smoke zero halogen, 3m")
+                .setHAlign("left")
+                .setCustomStyle({
+                    "KEY" : {
+                        "background-color" : "#00FF00",
                         "padding" : "0px 0px 0px 10px"
                     }
                 }),
@@ -1235,6 +1288,7 @@ xui.Class('App', 'xui.Module',{
         _refresh_tab_forward_capacity:function(){
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
+            this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
             
             var StarlingNodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
