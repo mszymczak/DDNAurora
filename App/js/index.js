@@ -1313,10 +1313,10 @@ xui.Class('App', 'xui.Module',{
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
-            if (this.xui_ui_checkbox100GbEthernet3m.getValue(true)) {
+            if (this.xui_ui_checkbox100GbEthernet3m.getValue(1)) {
                 this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
             }else{
-                this.xui_ui_labelBOMStarlingCableQty.setCaption(0);
+                this.xui_ui_labelBOMStarlingCableQty.setCaption(".");
             }
                
             
