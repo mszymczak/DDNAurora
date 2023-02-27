@@ -463,18 +463,18 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.961904761904762em")
                 .setWidth("11.885714285714286em")
                 .setCaption("Period of Performance")
-                .setHAlign("center"),
+                .setHAlign("left"),
                 "b"
             );
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1420")
-                .setLeft("13.714285714285714em")
+                .setLeft("17.523809523809526em")
                 .setTop("3.961904761904762em")
                 .setWidth("11.885714285714286em")
                 .setCaption("Support Type")
-                .setHAlign("center"),
+                .setHAlign("left"),
                 "b"
             );
             
@@ -482,7 +482,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput_TermsSupportYears")
                 .setName("xui_ui_comboinput_TermsSupportYears")
-                .setLeft("26.666666666666668em")
+                .setLeft("32.76190476190476em")
                 .setTop("5.485714285714286em")
                 .setType("counter")
                 .setPrecision(null)
@@ -497,18 +497,18 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1421")
-                .setLeft("25.904761904761905em")
+                .setLeft("32.76190476190476em")
                 .setTop("3.961904761904762em")
                 .setWidth("11.885714285714286em")
                 .setCaption("Support Years")
-                .setHAlign("center"),
+                .setHAlign("left"),
                 "b"
             );
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label1422")
-                .setLeft("37.333333333333336em")
+                .setLeft("43.42857142857143em")
                 .setTop("5.79047619047619em")
                 .setWidth("10.361904761904762em")
                 .setCaption("Yrs (1 - 5)")
@@ -556,7 +556,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput_TermsSupportType")
                 .setName("xui_ui_comboinput_TermsSupportType")
-                .setLeft("14.476190476190476em")
+                .setLeft("17.523809523809526em")
                 .setTop("5.485714285714286em")
                 .setLabelSize("auto")
                 .setType("listbox")
@@ -1205,15 +1205,28 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_tabs33.append(
-                xui.create("xui.UI.CheckBox")
-                .setHost(host,"xui_ui_checkbox100GbEthernet3m")
-                .setLeft("44.19047619047619em")
-                .setTop("13.028571428571428em")
-                .setWidth("20.419047619047618em")
-                .setHeight("0.22857142857142856em")
-                .setCaption("100Gb/s Copper Ethernet, QSFP28, 3m")
-                .setName("xui_ui_checkbox100GbEthernet3m")
-                .setValue(true),
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput_100GbEthernet3m")
+                .setName("xui_ui_comboinput_100GbEthernet3m")
+                .setLeft("43.42857142857143em")
+                .setTop("13.104761904761904em")
+                .setLabelSize("auto")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "None",
+                        "caption" : "No Cables",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "100GbsCopperEthernetQSFP283m",
+                        "caption" : "100Gb/s Copper Ethernet, QSFP28, 3m",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setWidth("14.552380952380952em")
+                .setValue("None")
+                .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
             
@@ -1313,13 +1326,17 @@ xui.Class('App', 'xui.Module',{
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
-            if (this.xui_ui_checkbox100GbEthernet3m.getUIValue()) {
-                this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
-            }else{
-                this.xui_ui_labelBOMStarlingCableQty.setCaption(".");
-            }
-               
             
+            switch (this.xui_ui_comboinput_100GbEthernet3m.getUIValue()){
+            case "100GbsCopperEthernetQSFP283m":
+                this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
+                break;
+            case "None":
+                this.xui_ui_labelBOMStarlingCableQty.setCaption(".");
+                break;
+            default :
+            }
+          
             var StarlingNodeDriveDevicePopulation = 0;           
             switch (this.xui_ui_radioboxNodeDriveDevicePopulation.getUIValue()){
             case "P":
