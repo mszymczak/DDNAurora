@@ -1330,7 +1330,7 @@ xui.Class('App', 'xui.Module',{
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
-            this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingApplianceQty);
+            this.xui_ui_labelBOMStarlingSupportQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelPSBPFSESSRemoteQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
             this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingDriveDeviceQty);
