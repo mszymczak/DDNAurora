@@ -1333,7 +1333,6 @@ xui.Class('App', 'xui.Module',{
             this.xui_ui_labelBOMStarlingSupportQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelPSBPFSESSRemoteQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
-            this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingDriveDeviceQty);
            
             //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
             //dlg.append(dlginput = new xui.UI.Input);
@@ -1386,7 +1385,7 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(TermYears);
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(TermYears);
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingDriveDeviceQty);
                 this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life; use only with BSPO offerings; price is per SSD; annual");
                 break;
             case "Premium Onsite":
@@ -1394,7 +1393,7 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(TermYears);
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-PROS-1");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(TermYears);
+                this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingDriveDeviceQty);
                 this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Onsite Support; SSD Drives; coverage through normal wear life; use only with PROS offerings; price is per SSD; annual");
                 break;
             default :
