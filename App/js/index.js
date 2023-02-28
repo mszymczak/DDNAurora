@@ -600,7 +600,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("52.34285714285714em")
+                .setTop("53.86666666666667em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -618,7 +618,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSupportTypeDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("52.34285714285714em")
+                .setTop("53.86666666666667em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -636,7 +636,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSupportTypeQty")
                 .setLeft("16.761904761904763em")
-                .setTop("52.34285714285714em")
+                .setTop("53.86666666666667em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -792,7 +792,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1435")
+                .setHost(host,"xui_ui_labelPSBPFSESSRemoteQty")
+                .setName("xui_ui_labelPSBPFSESSRemoteQty")
                 .setLeft("16.761904761904763em")
                 .setTop("57.06666666666667em")
                 .setWidth("4.647619047619048em")
@@ -846,7 +847,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeSKU")
                 .setLeft("1.5238095238095237em")
-                .setTop("53.86666666666667em")
+                .setTop("52.34285714285714em")
                 .setWidth("13.790476190476191em")
                 .setCaption("Undefined")
                 .setHAlign("left")
@@ -864,7 +865,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeQty")
                 .setLeft("16.761904761904763em")
-                .setTop("53.86666666666667em")
+                .setTop("52.34285714285714em")
                 .setWidth("4.647619047619048em")
                 .setCaption(".")
                 .setCustomStyle({
@@ -881,7 +882,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setName("xui_ui_labelBOMStarlingSSDSupportTypeDescription")
                 .setLeft("22.857142857142858em")
-                .setTop("53.86666666666667em")
+                .setTop("52.34285714285714em")
                 .setWidth("65.6em")
                 .setCaption(".")
                 .setHAlign("left")
@@ -1226,7 +1227,6 @@ xui.Class('App', 'xui.Module',{
             
             var StarlingApplianceQty = Number(this.xui_ui_comboinput_StarlingApplianceQty.getUIValue());
             
-            
             switch (this.xui_ui_comboinput_100GbEthernet3m.getUIValue()){
             case "100GbsCopperEthernetQSFP283m":
                 this.xui_ui_labelBOMStarlingCableQty.setCaption(StarlingApplianceQty * 4);
@@ -1277,6 +1277,7 @@ xui.Class('App', 'xui.Module',{
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
+            this.xui_ui_labelPSBPFSESSRemoteQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
            
             //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
