@@ -1126,7 +1126,7 @@ xui.Class('App', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setValue("None")
+                .setValue("100GbsCopperEthernetQSFP283m")
                 .afterUIValueSet("_refresh_tab_forward_capacity"),
                 "b"
             );
