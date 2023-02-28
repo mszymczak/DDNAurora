@@ -1133,8 +1133,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label300")
-                .setName("xui_ui_labelBOMStarlingSSDSupportTypeSKU")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportSKU")
+                .setName("xui_ui_labelBOMStarlingSupportSKU")
                 .setLeft("1.5238095238095237em")
                 .setTop("52.95238095238095em")
                 .setWidth("13.790476190476191em")
@@ -1151,8 +1151,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label301")
-                .setName("xui_ui_labelBOMStarlingSSDSupportTypeQty")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportQty")
+                .setName("xui_ui_labelBOMStarlingSupportQty")
                 .setLeft("16.761904761904763em")
                 .setTop("52.95238095238095em")
                 .setWidth("4.647619047619048em")
@@ -1168,8 +1168,8 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_tabs33.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label302")
-                .setName("xui_ui_labelBOMStarlingSSDSupportTypeDescription")
+                .setHost(host,"xui_ui_labelBOMStarlingSupportDescription")
+                .setName("xui_ui_labelBOMStarlingSupportDescription")
                 .setLeft("22.857142857142858em")
                 .setTop("52.95238095238095em")
                 .setWidth("65.6em")
@@ -1330,8 +1330,10 @@ xui.Class('App', 'xui.Module',{
             //this.xui_ui_lblEffectiveCapacityTB.setCaption(UsableCapacityTB);
             
             this.xui_ui_labelBOMStarlingApplianceQty.setCaption(StarlingApplianceQty);
+            this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelPSBPFSESSRemoteQty.setCaption(StarlingApplianceQty);
             this.xui_ui_labelBOMStarlingDriveDeviceQty.setCaption(StarlingDriveDeviceQty);
+            this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(StarlingDriveDeviceQty);
            
             //var dlg = (new xui.UI.Dialog({caption:'Validations Log', width:500, height:400, left:'auto', right:'auto'})).show();
             //dlg.append(dlginput = new xui.UI.Input);
