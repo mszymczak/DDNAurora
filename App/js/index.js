@@ -779,7 +779,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("57.06666666666667em")
                 .setWidth("13.790476190476191em")
-                .setCaption("PSB-HW-INST")
+                .setCaption("PSB-PFS-ESS-REMOTE")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -812,95 +812,12 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("57.06666666666667em")
                 .setWidth("65.6em")
-                .setCaption(".")
+                .setCaption("Installation SKU - Customer to do physical hardware installation.")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#F5F5F5",
                         "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1438")
-                .setLeft("22.857142857142858em")
-                .setTop("58.59047619047619em")
-                .setWidth("65.6em")
-                .setCaption(".")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1439")
-                .setLeft("16.761904761904763em")
-                .setTop("58.59047619047619em")
-                .setWidth("4.647619047619048em")
-                .setCaption(".")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 10px 0px 0px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1440")
-                .setLeft("1.5238095238095237em")
-                .setTop("60.114285714285714em")
-                .setWidth("13.790476190476191em")
-                .setCaption("PSB-ONSITE")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1441")
-                .setLeft("22.857142857142858em")
-                .setTop("60.114285714285714em")
-                .setWidth("65.6em")
-                .setCaption(".")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1442")
-                .setLeft("16.761904761904763em")
-                .setTop("60.114285714285714em")
-                .setWidth("4.647619047619048em")
-                .setCaption(".")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 10px 0px 0px"
                     }
                 }),
                 "b"
@@ -1121,23 +1038,6 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("TB (approximate)")
                 .setHAlign("left"),
                 "capacity"
-            );
-            
-            host.xui_ui_tabs33.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label1437")
-                .setLeft("1.5238095238095237em")
-                .setTop("58.59047619047619em")
-                .setWidth("13.790476190476191em")
-                .setCaption("PS-CUSTOM")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY" : {
-                        "background-color" : "#F5F5F5",
-                        "padding" : "0px 0px 0px 10px"
-                    }
-                }),
-                "b"
             );
             
             host.xui_ui_tabs33.append(
@@ -1431,15 +1331,15 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Basic Parts Only Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-1");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wearl life; use only with BSPO offerings; price is per SSD; annual");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life; use only with BSPO offerings; price is per SSD; annual");
                 break;
             case "Premium Onsite":
                 this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption(".");
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support; storage systems, storage servers");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-BSPO-3");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-PROS-1");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeQty.setCaption(".");
-                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Support; SSD Drives");
+                this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Premium Onsite Support; SSD Drives; coverage through normal wear life; use only with PROS offerings; price is per SSD; annual");
                 break;
             default :
             }
