@@ -1363,19 +1363,19 @@ xui.Class('App', 'xui.Module',{
             switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
             case "SUP-POP-INV":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("0");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
             case "SUP-POP-30D":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("0");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
             case "SUP-POP-90D":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("0");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
             case "SUP-POP-ACC":
                 this.xui_ui_labelBOMStarlingPeriodofPerformanceSKU.setCaption(this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue());
-                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("0");
+                this.xui_ui_labelBOMStarlingPeriodofPerformanceQty.setCaption("1");
                 break;
             default :
             }
@@ -1390,7 +1390,7 @@ xui.Class('App', 'xui.Module',{
                 this.xui_ui_labelBOMStarlingSSDSupportTypeDescription.setCaption("Basic Parts Only Support; SSD Drives; coverage through normal wear life; use only with BSPO offerings; price is per SSD; annual");
                 break;
             case "Premium Onsite":
-                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("SUP-BSOS-3");
+                this.xui_ui_labelBOMStarlingSupportTypeSKU.setCaption("UP-PROS-1");
                 this.xui_ui_labelBOMStarlingSupportTypeQty.setCaption("1");
                 this.xui_ui_labelBOMStarlingSupportTypeDescription.setCaption("Premium Support; storage systems, storage servers");
                 this.xui_ui_labelBOMStarlingSSDSupportTypeSKU.setCaption("SUP-SSD-PROS-1");
