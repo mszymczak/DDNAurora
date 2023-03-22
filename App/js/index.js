@@ -1138,7 +1138,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("52.95238095238095em")
                 .setWidth("13.790476190476191em")
-                .setCaption("SUP-STLG-1")
+                .setCaption("SUP-INF-1")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -1173,7 +1173,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("52.95238095238095em")
                 .setWidth("65.6em")
-                .setCaption("Starling appliance HW support, per appliance, per year (PREMIUM ON SITE)")
+                .setCaption("Goshawk appliance HW support, per appliance, per year (PREMIUM ON SITE)")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
