@@ -236,7 +236,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.5238095238095237em")
                 .setTop("43.80952380952381em")
                 .setWidth("13.790476190476191em")
-                .setCaption("RS-7313")
+                .setCaption("GOSHAWK-12-HDR")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -304,7 +304,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("43.80952380952381em")
                 .setWidth("65.6em")
-                .setCaption("Starling Appliance with 12x NVME u.2 slots, 4x HDR ports, power cables, rack mount kit.")
+                .setCaption("Goshawk Appliance with 12x NVME u.2 slots, 4x HDR ports, power cables, rack mount kit.")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
@@ -427,7 +427,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.857142857142858em")
                 .setTop("46.857142857142854em")
                 .setWidth("65.6em")
-                .setCaption(" Aurora S3 Software License and Support Subscription")
+                .setCaption("Infinia S3 Software License and Support Subscription")
                 .setHAlign("left")
                 .setCustomStyle({
                     "KEY" : {
