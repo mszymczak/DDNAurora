@@ -61,7 +61,7 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id" : "b",
-                        "caption" : "DDN Aurora Forward Sizing"
+                        "caption" : "DDN Infinia Forward Sizing"
                     }
                 ])
                 .setLeft("14.476190476190476em")
@@ -197,7 +197,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("2.2857142857142856em")
                 .setTop("11.6571em")
                 .setWidth("19.504761904761907em")
-                .setCaption("DDN Aurora Starling RS-7313 Appliance")
+                .setCaption("DDN Infinia Goshawk-12-HDR Appliance")
                 .setHAlign("left"),
                 "b"
             );
@@ -1306,17 +1306,17 @@ xui.Class('App', 'xui.Module',{
             switch (this.xui_ui_radioboxNodeDriveDeviceType.getUIValue()){
             case "7":
                 StarlingNodeDriveDeviceTypeTB = Number(7.68);
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q0768O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S0TQ0768O24NKK3");
                 this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("7.68TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
                 break;
             case "15":
                 StarlingNodeDriveDeviceTypeTB = Number(15.36);
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q1536O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S0TQ1536O24NKK3");
                 this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("15.36TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
                 break;
             case "30":
                 StarlingNodeDriveDeviceTypeTB = Number(30.72);
-                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S04Q3072O24NKK3");
+                this.xui_ui_labelBOMStarlingDriveDeviceSKU.setCaption("S0TQ3072O24NKK3");
                 this.xui_ui_labelBOMStarlingDriveDeviceDescription.setCaption("30.72TB QLC NVMe G4 4K SSD drive module for SE2420 enclosure");
                 break;
             default :
@@ -1346,17 +1346,17 @@ xui.Class('App', 'xui.Module',{
             this.xui_ui_labelBOMStarlingSubscriptionQty.setCaption(BOMStarlingSubscriptionQty);
 
             if(RawCapacityTB < 101){
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-0-100TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 1-100TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-INF-S3-0-100TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Infinia S3 Software License and Support Subscription, 1-100TB, per 100TB, per year");
             }else if(RawCapacityTB > 100 && RawCapacityTB < 751) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-100-750TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 100-750TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-INF-S3-100-750TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Infinia S3 Software License and Support Subscription, 100-750TB, per 100TB, per year");
             }else if(RawCapacityTB > 750 && RawCapacityTB < 5626) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-750-5625TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 750-5,625TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-INF-S3-750-5625TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Infinia S3 Software License and Support Subscription, 750-5,625TB, per 100TB, per year");
             }else if(RawCapacityTB > 5625 && RawCapacityTB < 42189) {
-                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-AUR-S3-5625+TB-1Y");
-                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Aurora S3 Software License and Support Subscription, 5,625+TB, per 100TB, per year");
+                this.xui_ui_labelBOMStarlingSubscriptionSKU.setCaption("SUB-INF-S3-5625+TB-1Y");
+                this.xui_ui_labelBOMStarlingSubscriptionDescription.setCaption("Infinia S3 Software License and Support Subscription, 5,625+TB, per 100TB, per year");
             }
             
             switch (this.xui_ui_comboinput_TermsPeriodofPerformance.getUIValue()){
