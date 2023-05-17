@@ -68,6 +68,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("6.095238095238095em")
                 .setWidth("53.02857142857143em")
                 .setHeight("53.79047619047619em")
+                .setVisibility("hidden")
                 .setValue("b"),
                 "main"
             );
